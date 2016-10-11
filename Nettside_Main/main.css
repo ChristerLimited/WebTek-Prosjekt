@@ -1,10 +1,12 @@
-html {
-    background-color: whitesmoke;
+body {
+    background-color: #f7f6f6;
+    font-size: 24px;
+    line-height: 36px;
+
 }
 
 /* ---------- NavBar ----------- */
 #navbar_main2, li {
-    font-size: 36px;
     text-align: center;
     padding: 5px;
     position: absolute;
@@ -20,7 +22,7 @@ header {
     left: 640px;
     text-align: center;
     font-family: 'Playfair Display', serif;
-    color: seagreen;
+    color: #629c44;
     top:10px;
 }
 
@@ -36,14 +38,14 @@ header {
 }
 
 li:hover{
-    color: seagreen;  }
+    color: #629c44;  }
 li a {
     padding: 40px  }
 
 /* ----------- Content ----------- */
 
 h2 {
-    color: yellowgreen; /* Subheader */
+    color: yellowgreen; /* Subheader(?) */
 }
 
 
@@ -61,7 +63,7 @@ h2 {
     top: 150px;
     font-size: 24px;
     line-height: 36px;
-    color: darkslategrey;
+    color: black;
     font-family: 'Raleway', sans-serif;
 
 }
@@ -72,7 +74,7 @@ footer {
     bottom: -650px;
     left: 0.1%;
     right: 0.05%;
-    background-color: rgba(	85,	107,	47, 0.15);
+    background-color: rgba(76, 122, 52, 0.65);
     border-style: solid;
     border-width: 2px;
     border-bottom: 100px;
