@@ -5,14 +5,17 @@ html, body {
     height: 100%;
 }
 
+/* Wrapper: Helps keep footer at bottom */
 #wrapper {
-    min-height: 100%;
+    min-height: 100%;    
     position: relative;
 }
 
 /* ---------- NavBar ----------- */
 #nav {
-    height = 100px;
+    display: block;
+    height = 300px;
+    overflow: auto;
 }
 
 #navbar_main2, li {
@@ -52,11 +55,20 @@ li a {
     padding: 40px  }
 
 /* ----------- Content ----------- */
+#content {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 450px;
+}
 
 h2 {
     color: yellowgreen; /* Subheader(?) */
 }
-
 
 #image1 {
     position: relative;
@@ -65,17 +77,7 @@ h2 {
     width: 95%;
     margin-left: 2.5%;
 }
-#content {
-    position: relative;
-    margin: auto;
-    width: 50%;
-    top: 150px;
-    font-size: 24px;
-    line-height: 36px;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    padding-bottom: 400px;
-}
+
 
 /* ----------- Footer ----------- */
 footer {
