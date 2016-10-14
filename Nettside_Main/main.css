@@ -13,8 +13,7 @@ html, body {
 
 /* ---------- NavBar ----------- */
 #nav {
-    display: block;
-    height = 300px;
+    height: 150px;
     overflow: auto;
 }
 
