@@ -56,10 +56,10 @@ h2 {
     width: 95%;
     margin-left: 2.5%;
 }
-#text {
+#content {
     position: relative;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin: auto;
+    width: 50%;
     top: 150px;
     font-size: 24px;
     line-height: 36px;
@@ -69,25 +69,6 @@ h2 {
 }
 
 /* ----------- Footer ----------- */
-footer {
-    position: absolute;
-    bottom: -650px;
-    left: 0.1%;
-    right: 0.05%;
-    background-color: rgba(76, 122, 52, 0.65);
-    border-style: none;
-    border-width: 2px;
-    border-bottom: 100px;
-    font-size: 24px;
-    line-height: 12px;
-}
-
-#footer {
-    position: relative;
-    left:
-    100px;
-}
-
 #facebook {
     height: 100px;
     position: absolute;
