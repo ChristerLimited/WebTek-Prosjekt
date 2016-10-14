@@ -90,8 +90,18 @@ footer {
 
 #info {
     position: absolute;
-    width: 450px;
-    
+    padding: 20px;
+    color: #ffffff;
+    font-size: 2em;
+    font-family: 'Raleway', serif;
+}
+
+#info a {
+    color: #ffffff;
+}
+
+#info a:hover {
+    color: lightgreen;
 }
 
 #facebook {
