@@ -1,11 +1,22 @@
-body {
+html, body {
     background-color: #f7f6f6;
-    font-size: 24px;
-    line-height: 36px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
 
+/* Wrapper: Helps keep footer at bottom */
+#wrapper {
+    min-height: 100%;    
+    position: relative;
 }
 
 /* ---------- NavBar ----------- */
+#nav {
+    height: 150px;
+    overflow: auto;
+}
+
 #navbar_main2, li {
     text-align: center;
     padding: 5px;
@@ -43,11 +54,20 @@ li a {
     padding: 40px  }
 
 /* ----------- Content ----------- */
+#content {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    font-size: 24px;
+    line-height: 36px;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 450px;
+}
 
 h2 {
     color: yellowgreen; /* Subheader(?) */
 }
-
 
 #image1 {
     position: relative;
@@ -56,51 +76,60 @@ h2 {
     width: 95%;
     margin-left: 2.5%;
 }
-#text {
-    position: relative;
-    margin-left: 30%;
-    margin-right: 30%;
-    top: 150px;
-    font-size: 24px;
-    line-height: 36px;
-    color: black;
-    font-family: 'Raleway', sans-serif;
 
-}
 
 /* ----------- Footer ----------- */
 footer {
     position: absolute;
-    bottom: -650px;
-    left: 0.1%;
-    right: 0.05%;
-    background-color: rgba(76, 122, 52, 0.65);
-    border-style: solid;
-    border-width: 2px;
-    border-bottom: 100px;
-    font-size: 24px;
-    line-height: 12px;
+    height: 350px;
+    bottom: 0;
+    left: 0;
+    background-color: #4c7a34;
+    width: 100%;
 }
 
-#footer {
-    position: relative;
-    left:
-    100px;
+h3 {
+    margin: 0; /* This is done so #info controls padding */
 }
 
-#face {
-    height: 95px;
+#info {
     position: absolute;
-    z-index: 1;
-    bottom: 11px;
-    left: 1600px;
+    padding-top: 15px;
+    padding-left: 20px;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: 'Raleway', serif;
 }
 
-#insta {
+#info a {
+    color: #ffffff;
+}
+
+#info a:hover {
+    color: lightgreen;
+}
+
+#social {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 15px;
+    overflow: auto;
+}
+
+#facebook {
     height: 100px;
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    left: 1750px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    fill: #ffffff;
+}
+
+#instagram {
+    height: 100px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    fill: #ffffff;
 }
 
