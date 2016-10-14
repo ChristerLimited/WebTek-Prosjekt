@@ -81,16 +81,21 @@ h2 {
 /* ----------- Footer ----------- */
 footer {
     position: absolute;
-    height: 300px;
+    height: 350px;
     bottom: 0;
     left: 0;
     background-color: #4c7a34;
     width: 100%;
 }
 
+h3 {
+    margin: 0; /* This is done so #info controls padding */
+}
+
 #info {
     position: absolute;
-    padding: 20px;
+    padding-top: 15px;
+    padding-left: 20px;
     color: #ffffff;
     font-size: 1.5em;
     font-family: 'Raleway', serif;
