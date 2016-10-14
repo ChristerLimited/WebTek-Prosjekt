@@ -104,19 +104,23 @@ footer {
     color: lightgreen;
 }
 
+#social {
+    position: absolute;
+    display: block;
+    top: 20px;
+    right: 15px;
+    overflow: auto;
+}
+
 #facebook {
     height: 100px;
-    position: absolute;
-    right: 15px;
-    top: 20px;
+    position: relative;
     fill: #ffffff;
 }
 
 #instagram {
     height: 100px;
-    position: absolute;
-    top: 20px;
-    right: 125px;
+    position: relative;
     fill: #ffffff;
 }
 
