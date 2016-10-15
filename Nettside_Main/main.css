@@ -28,55 +28,24 @@ li {
     margin-right: 0;
 }
 
-#main_header li {
+#main_header li a {
     font-size: 50px;
     color: #629c44;
-    /*Endre til padding-right og padding-left lik 38 px.*/
-    padding-left: 40px;
+    padding-top: 0;
 }
 
 a {
     display: block;
-    padding: 35px;
-}
-/*#navbar_main2, li {
-
-#navbar_main2, li {
-    text-align: center;
-    padding: 5px;
-    position: absolute;
-    left: 1200px;
-    top: -20px;
-    font-family: 'Raleway', sans-serif;
-    color: darkslategrey;
+    padding: 20px 55px 55px 55px;
 }
 
-header {
-    position: absolute;
-    font-size: 66px;
-    left: 640px;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    color: #629c44;
-    top:10px;
-}
-
-#navbar_main1, li {
-    display: inline;
-    font-size: 36px;
-    text-align: center;
-    position: relative;
-    left: 5px;
-    top: 25px;
-    font-family: 'Raleway', sans-serif;
-    color: darkslategrey;
-}
-li a {
-    padding: 40px  }
-*/
 li:hover{
-    color: #629c44;  }
-
+    color: #629c44;
+}
+/*Keeps the navbar separated from the content section.*/
+#navbar-wrapper {
+    min-height: 15% ;
+}
 
 /* ----------- Content ----------- */
 #content {
