@@ -6,7 +6,34 @@ body {
 }
 
 /* ---------- NavBar ----------- */
-#navbar_main2, li {
+
+#navbar_main {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    color: darkslategrey;
+    font-size: 19px;
+}
+
+li {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#main_header li {
+    font-size: 50px;
+    color: #629c44;
+    /*Endre til padding-right og padding-left lik 38 px.*/
+    padding-left: 40px;
+}
+
+a {
+    display: block;
+    padding: 35px;
+}
+/*#navbar_main2, li {
     text-align: center;
     padding: 5px;
     position: absolute;
@@ -36,11 +63,12 @@ header {
     font-family: 'Raleway', sans-serif;
     color: darkslategrey;
 }
-
-li:hover{
-    color: #629c44;  }
 li a {
     padding: 40px  }
+*/
+li:hover{
+    color: #629c44;  }
+
 
 /* ----------- Content ----------- */
 
