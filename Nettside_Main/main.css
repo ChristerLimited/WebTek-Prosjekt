@@ -13,7 +13,7 @@ html, body {
 
 /* ---------- NavBar ----------- */
 
-#navbar-main {
+#navbar_main {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -34,7 +34,7 @@ li {
     padding-top: 0;
 }
 
-#navbar_wrapper a {
+.nav_a {
     display: block;
     padding: 20px 55px 55px 55px;
 }
