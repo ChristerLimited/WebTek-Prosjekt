@@ -47,55 +47,91 @@ li:hover{
 #content {
     position: relative;
     margin: auto;
-    width: 50%;
+    width: 65%;
     font-size: 24px;
     line-height: 36px;
     color: black;
     font-family: 'Raleway', sans-serif;
-    padding-bottom: 450px;
+    padding-top: 30px;
+    padding-bottom: 300px;
 }
 
 h2 {
     color: yellowgreen; /* Subheader(?) */
 }
-
+/* ------------- Landing page ------------ */
 #image1 {
     position: relative;
-    top: 80px;
-    height: 750px;
-    width: 95%;
-    margin-left: 2.5%;
+    top: 30px;
+    height: 100%;
+    width: 100%;
+}
+#image_menu {
+    position: relative;
+    margin-left: 11%;
+    bottom: 250px;
+    padding-bottom: 40px;
+
+}
+#image2, #image3, #image4, #image5 {
+    padding-left: 4%;
+    width: 17%;
+}
+
+#instabox {
+    position: relative;
+    margin: auto;
+    width: 65%;
+    background-color: rgba(205, 201, 201, 0.1);
+    bottom: 250px;
+    height: 350px;
+    border-style: double;
+}
+#instabox a {
+    position: absolute;
+    padding: 140px 0 0 44%;
 }
 
 
 /* ----------- Footer ----------- */
 footer {
     position: absolute;
-    height: 350px;
+    min-height: 175px;
     bottom: 0;
     left: 0;
-    background-color: #4c7a34;
-    width: 100%;
+    right: 0;
+    background-color: rgba(76, 122,52, 0.9);
+    border-style: solid;
+    border-color: #629c44;
 }
 
 h3 {
     margin: 0; /* This is done so #info controls padding */
 }
 
-#info {
+#info1, #info2 {
     position: absolute;
-    padding-top: 15px;
+    padding-top: 18px;
     padding-left: 20px;
     color: #ffffff;
     font-size: 1.5em;
     font-family: 'Raleway', serif;
+    line-height: 15px;
 }
 
-#info a {
+#info2 {
+    padding-left: 5%;
+}
+
+#info1 {
+    padding-left: 60%;
+}
+
+#info1 a {
     color: #ffffff;
 }
 
-#info a:hover {
+#info1 a:hover {
     color: lightgreen;
 }
 
@@ -105,9 +141,10 @@ h3 {
     top: 20px;
     right: 15px;
     overflow: auto;
+    padding-top: 20px;
 }
 
-#facebook {
+#facebook, #instagram {
     height: 100px;
     position: relative;
     padding-left: 10px;
@@ -115,11 +152,4 @@ h3 {
     fill: #ffffff;
 }
 
-#instagram {
-    height: 100px;
-    position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
-    fill: #ffffff;
-}
 
