@@ -20,25 +20,14 @@ html, body {
     font-family: 'Raleway', sans-serif;
     color: darkslategrey;
     font-size: 19px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-li {
-    float: left;
-    margin-left: 0;
-    margin-right: 0;
+#main {
+    font-size: 3em;
 }
-
-#main_header li a {
-    font-size: 50px;
-    color: #629c44;
-    padding-top: 0;
-}
-
-.nav_a {
-    display: block;
-    padding: 20px 55px 55px 55px;
-}
-
 li:hover{
     color: #629c44;
 }
