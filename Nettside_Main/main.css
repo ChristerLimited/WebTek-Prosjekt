@@ -27,10 +27,17 @@ html, body {
 
 #main {
     font-size: 3em;
+    color: #629c44
 }
+
+#main li:hover{
+    color: darkslategrey;
+}
+
 li:hover{
     color: #629c44;
 }
+
 /*Keeps the navbar separated from the content section.*/
 #navbar-wrapper {
     min-height: 15% ;
