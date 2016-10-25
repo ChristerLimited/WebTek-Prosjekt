@@ -65,6 +65,10 @@ html, body {
     padding-bottom: 300px;
 }
 
+#text {
+    column-count: 1;
+}
+
     /* ---- Cover Photo ---- */
 .cover_photo_container {
     display: block;
