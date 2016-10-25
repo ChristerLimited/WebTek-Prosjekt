@@ -57,8 +57,11 @@ li:hover{
 }
 
 #OmOssJumbo {
-    width: 100%;
+    width: 80%;
+    display: block;
+    margin: auto;
     object-fit: cover;
+    padding-top: 30px;
 }
 
 h2 {
