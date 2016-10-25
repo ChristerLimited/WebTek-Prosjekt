@@ -25,6 +25,18 @@ html, body {
     align-items: center;
 }
 
+#navbar_main a {
+    text-decoration: none;
+}
+
+#navbar_main a:visited {
+    color: darkslategray;
+}
+
+#navbar_main a:hover{
+    color: #629c44;
+}
+
 #main {
     font-size: 3em;
     color: #629c44
@@ -34,9 +46,6 @@ html, body {
     color: darkslategrey;
 }
 
-li:hover{
-    color: #629c44;
-}
 
 /*Keeps the navbar separated from the content section.*/
 #navbar-wrapper {
