@@ -110,7 +110,7 @@ footer {
     right: 0;
     background-color: rgba(76, 122,52, 0.9);
     border-style: solid;
-    border-color: #629c44;
+    border-color: rgba(76, 122,52, 0.9);
 }
 
 h3 {
@@ -118,21 +118,24 @@ h3 {
 }
 
 #info1, #info2 {
-    position: absolute;
+    /* position: absolute; */
     padding-top: 18px;
-    padding-left: 20px;
+
     color: #ffffff;
     font-size: 1.5em;
     font-family: 'Raleway', serif;
     line-height: 15px;
 }
 
-#info2 {
-    padding-left: 5%;
+#empty_space {
+    width: 50px;
 }
 
-#info1 {
-    padding-left: 60%;
+#info_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 75%;
 }
 
 #info1 a {
