@@ -40,7 +40,7 @@ li:hover{
 
 /*Keeps the navbar separated from the content section.*/
 #navbar-wrapper {
-    min-height: 15% ;
+    min-height: 15%;
 }
 
 /* ----------- Content ----------- */
@@ -48,12 +48,17 @@ li:hover{
     position: relative;
     margin: auto;
     width: 65%;
-    font-size: 24px;
+    font-size: 1em;
     line-height: 36px;
     color: black;
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
     padding-bottom: 300px;
+}
+
+#OmOssJumbo {
+    width: 100%;
+    object-fit: cover;
 }
 
 h2 {
