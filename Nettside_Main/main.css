@@ -136,7 +136,30 @@ h2 {
     padding: 140px 0 0 44%;
 }
 
+/*------------ Produkter -------- */
+#cover_picture {
+    width: 100%;
+}
 
+.image {
+    margin-right: 15%;
+    margin-bottom: 5%;
+    float: left;
+    width: 180px;
+}
+
+.image img:hover {
+    border: 1px solid #777;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+#image_collection_part_1, #image_collection_part_2 {
+    display: flex;
+}
 /* ----------- Footer ----------- */
 footer {
     position: absolute;
