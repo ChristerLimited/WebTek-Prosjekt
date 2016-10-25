@@ -56,13 +56,33 @@ li:hover{
     padding-bottom: 300px;
 }
 
-#OmOssJumbo {
+    /* ---- Cover Photo ---- */
+.cover_photo_container {
+    display: block;
+    position: relative;
+    margin: auto;
     width: 80%;
+    vertical-align: middle;
+}
+
+.responsive_cover_photo {
+    width: 100%;
     display: block;
     margin: auto;
-    object-fit: cover;
     padding-top: 30px;
 }
+
+.responsive_cover_text {
+    position: absolute; 
+    top: calc(50% - 1.25em); /*24px is font size of H1 I assume*/
+    left: 0;
+    text-align: center; 
+    width: 100%; 
+    font-family: 'Raleway', sans-serif;
+    font-size: 4em;
+    color: white;
+}
+    /* --- /Cover Photo --- */
 
 h2 {
     color: yellowgreen; /* Subheader(?) */
