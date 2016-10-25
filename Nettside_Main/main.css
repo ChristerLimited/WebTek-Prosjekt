@@ -100,7 +100,7 @@ h2 {
 /* ---------------- Om Oss --------------- */
 .maps {
     display: block;
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
 }
 /* ------------- Landing page ------------ */
