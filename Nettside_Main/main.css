@@ -7,7 +7,7 @@ html, body {
 
 /* Wrapper: Helps keep footer at bottom */
 #wrapper {
-    min-height: 100%;    
+    min-height: 100%;
     position: relative;
 }
 
@@ -23,6 +23,7 @@ html, body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 10px;
 }
 
 #navbar_main a {
@@ -39,7 +40,7 @@ html, body {
 
 #main {
     font-size: 3em;
-    color: #629c44;
+    color: #629c44
 }
 
 #main li:hover{
@@ -62,15 +63,10 @@ html, body {
     color: black;
     font-family: 'Raleway', sans-serif;
     padding-top: 30px;
-    padding-bottom: 300px;
 }
 
-#text {
-    column-count: 1;
-}
-
-    /* ---- Cover Photo ---- */
-.cover_photo_container {
+/* ---- Cover Photo ---- */
+.cover_photo_container, #image1 {
     display: block;
     position: relative;
     margin: auto;
@@ -86,16 +82,16 @@ html, body {
 }
 
 .responsive_cover_text {
-    position: absolute; 
+    position: absolute;
     top: calc(50% - 1.25em); /*24px is font size of H1 I assume*/
     left: 0;
-    text-align: center; 
-    width: 100%; 
+    text-align: center;
+    width: 100%;
     font-family: 'Raleway', sans-serif;
     font-size: 4em;
     color: white;
 }
-    /* --- /Cover Photo --- */
+/* --- /Cover Photo --- */
 
 h2 {
     color: yellowgreen; /* Subheader(?) */
@@ -109,31 +105,32 @@ h2 {
 }
 /* ------------- Landing page ------------ */
 #image1 {
-    position: relative;
-    top: 30px;
-    height: 100%;
-    width: 100%;
+    width: 90%;
 }
 #image_menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     position: relative;
-    margin-left: 11%;
-    bottom: 250px;
-    padding-bottom: 40px;
-
+    max-width: 80%;
+    left: 10%;
+    padding-bottom: 50px;
 }
 #image2, #image3, #image4, #image5 {
-    padding-left: 4%;
-    width: 17%;
+    padding-bottom: 15px;
+    height: 250px;
 }
 
 #instabox {
-    position: relative;
     margin: auto;
     width: 65%;
     background-color: rgba(205, 201, 201, 0.1);
-    bottom: 250px;
+    bottom: 20px;
     height: 350px;
     border-style: double;
+    position: inherit;
 }
 #instabox a {
     position: absolute;
@@ -149,7 +146,7 @@ h2 {
     margin-right: 15%;
     margin-bottom: 5%;
     float: left;
-    width: 40%;
+    width: 180px;
 }
 
 .image img:hover {
@@ -161,46 +158,12 @@ h2 {
     height: auto;
 }
 
-#image_collection_part_1, #image_collection_part_2, #image_collection_part_3 {
+#image_collection_part_1, #image_collection_part_2 {
     display: flex;
 }
-
-/* Styling obtained from this location: http://codepen.io/desandro/pen/PqNBzj */
-* { box-sizing: border-box; }
-
-/* force scrollbar */
-html { overflow-y: scroll; }
-
-/* ---- isotope ---- */
-
-/* clear fix */
-.grid:after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
-/* ---- .grid-item ---- */
-
-.grid-sizer,
-.grid-item {
-    width: 33.333%;
-}
-
-.grid-item {
-    float: left;
-}
-
-.grid-item img {
-    display: block;
-    max-width: 100%;
-}
-
-/* END of obtained style from location: http://codepen.io/desandro/pen/PqNBzj */
-
 /* ----------- Footer ----------- */
 footer {
-    position: absolute;
+    position: relative;
     min-height: 175px;
     bottom: 0;
     left: 0;
@@ -219,7 +182,7 @@ h3 {
     padding-top: 18px;
 
     color: #ffffff;
-    font-size: 1em;
+    font-size: 1.5em;
     font-family: 'Raleway', serif;
     line-height: 15px;
 }
@@ -256,33 +219,7 @@ h3 {
     height: 100px;
     position: relative;
     padding-left: 10px;
-    padding-right: 10px;
     fill: #ffffff;
 }
 
 /*--- Tilbakemelding ---*/
-
-input[type=text]{
-    width:20%;
-    background-color: #f8f8f8;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
-input[type=email]{
-    width:20%;
-    background-color: #f8f8f8;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea {
-    width: 40%;
-    height: 150px;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    font-size: 16px;
-    resize: none;
-}
