@@ -115,17 +115,16 @@ h2 {
     align-items: center;
     position: relative;
     max-width: 85%;
-    left: 10%;
+    left: 7.5%;
     padding-bottom: 50px;
 }
 #image2, #image3, #image4, #image5 {
     padding-bottom: 15px;
     height: 200px;
-    align-items: center;
 }
 
 #image4, #image5 {
-    height: 178.3px;
+    height: 180px;
 }
 
 #instabox {
