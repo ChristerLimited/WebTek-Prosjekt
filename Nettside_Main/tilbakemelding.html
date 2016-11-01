@@ -20,17 +20,18 @@
     </ul>
 
     <!-- ------------Content------------- -->
-    <form id="form1">
-        First name:<br>
-        <input type="text" name="Fornavn"><br>
-        Last name:<br>
-        <input type="text" name="Etternavn"><br>
+    <form id="tilbakemelding">
+        Fornavn:<br>
+        <input type="text" name="Fornavn" placeholder="Ola" required><br>
+        Etternavn:<br>
+        <input type="text" name="Etternavn" placeholder="Nordmann" required><br>
         Email:<br>
-        <input type="email" name="Email"><br>
+        <input type="email" name="Email" placeholder="some@email.com" required><br>
         <br>
-        <input type="submit" value="Submit">
         Skriv til oss:<br>
-        <textarea name="melding" rows="40" cols="50"></textarea>
+        <textarea name="melding" rows="40" cols="50" placeholder="Hvis du har en tilbakemelding, eller bare et spørsmål. Ikke nøl med å skrive til oss!" required></textarea>
+        <br>
+        <input type="submit" value="Send">
     </form>
 
     <!-- ------------Footer------------- -->
