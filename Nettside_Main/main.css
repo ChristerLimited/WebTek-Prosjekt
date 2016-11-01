@@ -120,7 +120,12 @@ h2 {
 }
 #image2, #image3, #image4, #image5 {
     padding-bottom: 15px;
-    height: 250px;
+    height: 220px;
+    align-items: center;
+}
+
+#image4, #image5 {
+    height: 196px;
 }
 
 #instabox {
