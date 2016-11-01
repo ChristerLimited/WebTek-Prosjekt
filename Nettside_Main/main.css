@@ -145,7 +145,7 @@ h2 {
     margin-right: 15%;
     margin-bottom: 5%;
     float: left;
-    width: 180px;
+    width: 40%;
 }
 
 .image img:hover {
@@ -157,9 +157,43 @@ h2 {
     height: auto;
 }
 
-#image_collection_part_1, #image_collection_part_2 {
+#image_collection_part_1, #image_collection_part_2, #image_collection_part_3 {
     display: flex;
 }
+
+/* Styling obtained from this location: http://codepen.io/desandro/pen/PqNBzj */
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+/* ---- isotope ---- */
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+    width: 33.333%;
+}
+
+.grid-item {
+    float: left;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+/* END of obtained style from location: http://codepen.io/desandro/pen/PqNBzj */
+
 /* ----------- Footer ----------- */
 footer {
     position: absolute;
