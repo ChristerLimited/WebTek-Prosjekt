@@ -47,6 +47,19 @@ html, body {
     color: darkslategrey;
 }
 
+#sub_parent {
+  position: relative;
+}
+
+#sub_ul {
+  list-style-type: none;
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0;
+  padding-left:0;
+}
 
 /*Keeps the navbar separated from the content section.*/
 #navbar-wrapper {
