@@ -47,21 +47,27 @@ html, body {
     color: darkslategrey;
 }
 
-#sub_parent {
+.nav_a {
     position: relative;
+    display: flex;
 }
 
-#sub_ul {
+#product_menu {
     list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    position: absolute;
-    left: 0;
-    padding-top: 10px;
+    display: none;
+    max-width: 100%;
+    flex-direction: row;
+    /*justify-content: flex-start;*/
+    position: relative;
+    overflow: hidden;
+    transition: max-width 1s ease 0s;
+    padding-top: 0px;
     padding-left: 0px;
 }
 
+#product_menu li {
+    padding-right: 15px;
+}
 /*Keeps the navbar separated from the content section.*/
 #navbar-wrapper {
     min-height: 15%;
