@@ -48,17 +48,18 @@ html, body {
 }
 
 #sub_parent {
-  position: relative;
+    position: relative;
 }
 
 #sub_ul {
-  list-style-type: none;
-  display: none;
-  flex-direction: column;
-  justify-content: flex-start;
-  position: absolute;
-  left: 0;
-  padding-left:0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 0px;
 }
 
 /*Keeps the navbar separated from the content section.*/
