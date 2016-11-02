@@ -1,29 +1,35 @@
 html, body {
-    background-color: #f7f6f6;
-    padding: 0;
-    margin: 0;
     height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #f7f6f6;
 }
 
 /* Wrapper: Helps keep footer at bottom */
 #wrapper {
-    min-height: 100%;
     position: relative;
+
+    min-height: 100%;
 }
 
 /* ---------- NavBar ----------- */
-
 #navbar_main {
-    list-style-type: none;
+    display: flex;
+
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+
+    list-style-type: none;
+
     color: darkslategrey;
+
+    font-family: 'Raleway', sans-serif;
     font-size: 19px;
-    display: flex;
+
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 10px;
 }
 
 #navbar_main a {
@@ -39,8 +45,9 @@ html, body {
 }
 
 #main {
-    font-size: 3em;
     color: #629c44
+
+    font-size: 3em;
 }
 
 #main li:hover{
@@ -49,25 +56,31 @@ html, body {
 
 .nav_a {
     position: relative;
+
     display: flex;
 }
 
 #product_menu {
-    list-style-type: none;
-    display: none;
-    max-width: 100%;
-    flex-direction: row;
     /*justify-content: flex-start;*/
     position: relative;
+
+    display: none;
     overflow: hidden;
-    transition: max-width 1s ease 0s;
+    flex-direction: row;
+
+    max-width: 100%;
     padding-top: 0px;
     padding-left: 0px;
+
+    list-style-type: none;
+
+    transition: max-width 1s ease 0s;
 }
 
 #product_menu li {
     padding-right: 15px;
 }
+
 /*Keeps the navbar separated from the content section.*/
 #navbar-wrapper {
     min-height: 15%;
@@ -76,27 +89,34 @@ html, body {
 /* ----------- Content ----------- */
 #content {
     position: relative;
-    margin: auto;
+
     width: 65%;
+    margin: auto;
+    padding-top: 30px;
+
+    color: black;
+
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
     line-height: 36px;
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    padding-top: 30px;
 }
 
 /* ---- Cover Photo ---- */
 .cover_photo_container, #image1 {
-    display: block;
     position: relative;
-    margin: auto;
+
+    display: block;
+
     width: 80%;
+    margin: auto;
+
     vertical-align: middle;
 }
 
 .responsive_cover_photo {
-    width: 100%;
     display: block;
+
+    width: 100%;
     margin: auto;
     padding-top: 30px;
 }
@@ -105,11 +125,15 @@ html, body {
     position: absolute;
     top: calc(50% - 1.25em); /*24px is font size of H1 I assume*/
     left: 0;
-    text-align: center;
+
     width: 100%;
+
+    text-align: center;
+
+    color: white;
+
     font-family: 'Raleway', sans-serif;
     font-size: 4em;
-    color: white;
 }
 /* --- /Cover Photo --- */
 
@@ -120,27 +144,34 @@ h2 {
 /* ---------------- Om Oss --------------- */
 .maps {
     display: block;
+
     max-width: 600px;
     margin: 0 auto;
 }
+
 /* ------------- Landing page ------------ */
 #image1 {
     width: 90%;
 }
+
 #image_menu {
+    position: relative;
+    left: 7.5%;
+
     display: flex;
     flex-direction: row;
+
+    max-width: 85%;
+    padding-bottom: 50px;
+
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    max-width: 85%;
-    left: 7.5%;
-    padding-bottom: 50px;
 }
+
 #image2, #image3, #image4, #image5 {
-    padding-bottom: 15px;
     height: 200px;
+    padding-bottom: 15px;
 }
 
 #image4, #image5 {
@@ -148,16 +179,20 @@ h2 {
 }
 
 #instabox {
-    margin: auto;
-    width: 65%;
-    background-color: rgba(205, 201, 201, 0.1);
-    bottom: 20px;
-    height: 350px;
-    border-style: double;
     position: inherit;
+    bottom: 20px;
+
+    width: 65%;
+    height: 350px;
+    margin: auto;
+
+    border-style: double;
+    background-color: rgba(205, 201, 201, 0.1);
 }
+
 #instabox a {
     position: absolute;
+
     padding: 140px 0 0 44%;
 }
 
@@ -167,10 +202,11 @@ h2 {
 }
 
 .image {
+    float: left;
+
+    width: 180px;
     margin-right: 15%;
     margin-bottom: 5%;
-    float: left;
-    width: 180px;
 }
 
 .image img:hover {
@@ -185,16 +221,19 @@ h2 {
 #image_collection_part_1, #image_collection_part_2 {
     display: flex;
 }
+
 /* ----------- Footer ----------- */
 footer {
     position: relative;
-    min-height: 175px;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    background-color: rgba(76, 122,52, 0.9);
+
+    min-height: 175px;
+
     border-style: solid;
     border-color: rgba(76, 122,52, 0.9);
+    background-color: rgba(76, 122,52, 0.9);
 }
 
 h3 {
@@ -206,8 +245,9 @@ h3 {
     padding-top: 18px;
 
     color: #ffffff;
-    font-size: 1em;
+
     font-family: 'Raleway', serif;
+    font-size: 1em;
     line-height: 15px;
 }
 
@@ -218,8 +258,10 @@ h3 {
 #info_flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+
     width: 75%;
+
+    flex-wrap: wrap;
 }
 
 #info1 a {
@@ -232,42 +274,52 @@ h3 {
 
 #social {
     position: absolute;
-    display: block;
     top: 20px;
     right: 15px;
+
+    display: block;
     overflow: auto;
+
     padding-top: 20px;
 }
 
 #facebook, #instagram {
-    height: 80px;
     position: relative;
+
+    height: 80px;
     padding-left: 10px;
+
     fill: #ffffff;
 }
 
 /*--- Tilbakemelding ---*/
 input[type=text]{
     width:20%;
-    background-color: #f8f8f8;
+
     border: 2px solid #ccc;
     border-radius: 4px;
+    background-color: #f8f8f8;
 }
+
 input[type=email]{
     width:20%;
-    background-color: #f8f8f8;
+
     border: 2px solid #ccc;
     border-radius: 4px;
+    background-color: #f8f8f8;
 }
 
 textarea {
+    box-sizing: border-box;
     width: 40%;
     height: 150px;
     padding: 12px 20px;
-    box-sizing: border-box;
+
+    resize: none;
+
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
+
     font-size: 16px;
-    resize: none;
 }
