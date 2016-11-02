@@ -20,6 +20,7 @@ html, body {
     margin: 0;
     padding: 0;
     padding-bottom: 10px;
+    width: 100%;
 
     list-style-type: none;
 
@@ -34,6 +35,7 @@ html, body {
 
 #navbar_main a {
     text-decoration: none;
+    transition: 1s;
 }
 
 #navbar_main a:visited {
@@ -57,28 +59,36 @@ html, body {
 .nav_a {
     position: relative;
 
-    display: flex;
+    /*display: none;*/
 }
 
 #product_menu {
-    /*justify-content: flex-start;*/
-    position: relative;
+  display: none;
+  overflow: hidden;
 
-    display: none;
-    overflow: hidden;
-    flex-direction: row;
+  padding-top: 0px;
+  padding-left: 0px;
 
-    max-width: 100%;
-    padding-top: 0px;
-    padding-left: 0px;
+  list-style-type: none;
 
-    list-style-type: none;
-
-    transition: max-width 1s ease 0s;
+  transition: max-width 1s;
 }
 
-#product_menu li {
-    padding-right: 15px;
+.product_menu_min {
+  flex-grow: 0.0001;
+  max-width: 0%;
+}
+
+.product_menu_max {
+  position: relative;
+
+  max-width: 100%;
+}
+
+.product {
+  /*position: relative;
+  left: 60%;*/
+  transition: 1s;
 }
 
 /*Keeps the navbar separated from the content section.*/

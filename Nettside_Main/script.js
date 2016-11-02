@@ -1,33 +1,39 @@
 function myDropdown() {
   var items = document.getElementsByClassName('nav_a');
   var product_menu = document.getElementById('product_menu');
-  for (var i = 0; i < items.length; i++) {
-    items[i].style.display = 'none';
+
+  if (product_menu.style.display = 'none') {
+    slideOut(product_menu, items);
+  } else {
+    alert('oops')
   }
-
-  product_menu.style.display = 'flex';
 }
 
-function slideOut(elem) {
-	elem.style.maxWidth = '1000px';
-	// We're using a timer to set opacity = 0 because setting max-height = 0 doesn't (completely) hide the element.
-	elem.style.opacity   = '1';
+function slideOut(submenu, tohide) {
+  submenu.style.display = 'flex';
+  // submenu.className = 'product_menu_max';
+  for (var i = 0; i < tohide.length; i++) {
+    tohide[i].style.display = 'none';
+  }
+  once( 1, function () {
+    submenu.className = 'product_menu_max';
+  });
 }
 
-function slideBack(elem) {
-	elem.style.maxWidth = '1000px';
-	// We're using a timer to set opacity = 0 because setting max-height = 0 doesn't (completely) hide the element.
-	elem.style.opacity   = '1';
-    alert('something happened')
+function slideBack(submenu, toshow) {
+  once( 1, function () {
+    var product_menu = document.getElementById('product_menu');
+
+  });
 }
 
-// var sub = document.getElementById("sub_ul");
-//    var test = sub.style.display.value;
-//    console.log('display: ' + test)
-//	if(sub.style.display == 'none') {
-//        sub.style.display = 'flex';
-//        sub.style.maxHeight = '1000px';
-//    } else {
-//        sub.style.display = 'none';
-//        slideBack(sub);
-//    }
+function once (seconds, callback) {
+	var counter = 0;
+	var time = window.setInterval( function () {
+		counter++;
+		if ( counter >= seconds ) {
+			callback();
+			window.clearInterval( time );
+		}
+	}, 1000 );
+}
