@@ -27,7 +27,8 @@ html, body {
 
   /*-webkit-flex-flow: row wrap;*/
   flex-flow: row wrap;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .navbar_wrapper > * {
@@ -36,12 +37,16 @@ html, body {
 
   font-family: 'Raleway', sans-serif;
   font-size: 19px;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 /* Medium screens */
 @media all and (min-width: 600px) {
   /* We tell both sidebars to share a row */
   .row_1, .row_2 { flex: 1 auto; }
+  .main {
+  }
 }
 
 /* Large screens */
@@ -49,9 +54,7 @@ html, body {
   /* We invert order of first sidebar and main
    * And tell the main element to take twice as much width as the other two sidebars
    */
-  .navbar_wrapper > * { flex: 1 auto;
-    
-  }
+  .navbar_wrapper > * { flex: 1 auto; }
 
   #item-1 { order: 1; }
   #item-2 { order: 2; }
