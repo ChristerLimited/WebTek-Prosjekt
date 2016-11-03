@@ -15,45 +15,37 @@ html, body {
 
 /* ---------- NavBar ----------- */
 .navbar_wrapper {
-  /*display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;*/
   display: flex;
 
-  /*margin: 0;
-  padding: 0;*/
   padding-bottom: 10px;
 
-  /*-webkit-flex-flow: row wrap;*/
+  text-align: center;
+
   flex-flow: row wrap;
   align-items: center;
-  text-align: center;
 }
 
 .navbar_wrapper > * {
-  flex: 1 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
   text-decoration: none;
 
   font-family: 'Raleway', sans-serif;
   font-size: 19px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+
+  flex: 1 100%;
 }
 
 /* Medium screens */
 @media all and (min-width: 600px) {
-  /* We tell both sidebars to share a row */
   .row_1, .row_2 { flex: 1 auto; }
   .main {
   }
 }
 
 /* Large screens */
-@media all and (min-width: 800px) {
-  /* We invert order of first sidebar and main
-   * And tell the main element to take twice as much width as the other two sidebars
-   */
+@media all and (min-width: 900px) {
   .navbar_wrapper > * { flex: 1 auto; }
 
   #item-1 { order: 1; }
@@ -77,6 +69,7 @@ html, body {
 
 .navbar_wrapper > .main {
   color: #629c44;
+
   font-size: 3em;
 }
 
@@ -91,6 +84,7 @@ html, body {
 .product_menu_min {
   display: none;
 }
+
 /* ----------- Content ----------- */
 #content {
     position: relative;
@@ -140,7 +134,8 @@ html, body {
     font-family: 'Raleway', sans-serif;
     font-size: 4em;
 }
-/* --- /Cover Photo --- */
+
+/* --- Cover Photo --- */
 
 h2 {
     color: yellowgreen; /* Subheader(?) */
