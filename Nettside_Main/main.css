@@ -21,11 +21,6 @@ html, body {
   padding: 0;*/
   padding-bottom: 10px;
 
-  color: darkslategrey;
-
-  font-family: 'Raleway', sans-serif;
-  font-size: 19px;
-
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
@@ -34,54 +29,39 @@ html, body {
 .navbar_wrapper > * {
   flex: 1 100%;
   text-decoration: none;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
 }
 
-.navbar_wrapper a:visited {
-    color: darkslategray;
+.navbar_wrapper {
+  color: darkslategrey;
 }
 
-.navbar_wrapper a:hover{
-    color: #629c44;
+.navbar_wrapper a:not(.main):visited {
+  color: darkslategrey;
 }
 
-.main {
+.navbar_wrapper a:not(.main):hover {
+  color: #629c44;
+}
+
+.navbar_wrapper > .main {
   color: #629c44;
   font-size: 3em;
 }
 
-#main a:hover{
+.navbar_wrapper > .main a:visited {
+  color: #629c44;
+}
+
+.navbar_wrapper a.main:hover {
   color: darkslategrey;
 }
 
-#product_menu {
-  display: none;
-  overflow: hidden;
-
-  padding-top: 0px;
-  padding-left: 0px;
-
-  transition: max-width 1s;
-}
-
 .product_menu_min {
-  flex-grow: 0.0001;
-  max-width: 0%;
+  display: none;
 }
-
-.product_menu_max {
-  position: relative;
-
-  max-width: 100%;
-}
-
-.product {
-  /*position: relative;
-  left: 60%;*/
-  transition: 1s;
-}
-
-/*Keeps the navbar separated from the content section.*/
-
 /* ----------- Content ----------- */
 #content {
     position: relative;
