@@ -9,15 +9,24 @@
 <body>
 
 <div id="wrapper">
-    <!-- ------------NavBar------------- -->
-    <!-- Used to contain the nav. bar content. -->
-    <ul id="navbar_main">
-        <li><a class="nav_a">Produkter</a></li>
-        <li><a class="nav_a" href="om_oss.html">Om oss</a></li>
-        <li><a class="nav_a" id="main" href="startside.html">Steintøykjelleren</a></li>
-        <li><a class="nav_a" href="">Kontakt oss</a></li>
-        <li><a class="nav_a" href="tilbakemelding.html">Tilbakemelding</a></li>
-    </ul>
+  
+  <!-- ********** NavBar ********** -->
+  <!-- Used to contain the nav. bar content. -->
+    <div class="navbar_wrapper">
+      <a class="main" id="main" onclick="mySlide()" href="#">Steintøykjelleren</a>
+      <a class="menu_item row_1" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
+      <a class="menu_item row_2" id="item-2" href="om_oss.html">Om oss</a>
+      <a class="menu_item row_2" id="item-3" href="#">Kontakt oss</a>
+      <a class="menu_item row_1" id="item-4" href="#">Tilbakemelding</a>
+      <!-- start interactive menu -->
+      <div id="product_menu" class="product_menu_min" href="#">
+        <a class="product">Bestikk</a>
+        <a class="product">Interiør</a>
+        <a class="product">Kjøkken</a>
+        <a class="product">Servise</a>
+      </div>
+      <!-- end interactive menu -->
+    </div>
 
     <!-- ------------Content------------- -->
     <img class="cover_photo_container" src="..\bilder\kitchen_coverphoto_final.jpg" alt="kitchen cover photo">
