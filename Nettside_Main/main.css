@@ -185,9 +185,9 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(76, 122,52, 0.9);
+    background-color: rgba(	66,	100, 20, 0.75);
     border-style: solid;
-    border-color: rgba(76, 122,52, 0.9);
+    border-color: grey;
 }
 
 h3 {
