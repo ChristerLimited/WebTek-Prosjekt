@@ -16,6 +16,7 @@ window.onload = function() {
         currentImage.onclick = function() {
             currentModule.style.display = "block";
             currentModalImage.src = currentImage.src;
+            currentModalImage.alt = currentImage.alt;
         }
     }
 };
