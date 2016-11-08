@@ -4,6 +4,7 @@
     <title>Produkter</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="produkter.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
 </head>
 <body>
@@ -24,46 +25,56 @@
 
     <div id="content">
         <p>Her er noen av våre kjøkkenrelaterte produkter:</p>
-        <div class="grid">
-            <div class="grid-sizer"></div>
-            <div class="grid-item">
-                <a>
-                    <img src="bilder\kjokken3.jpg" alt="kitchen photo 3">
-                </a>
+        <div id="image_collection_part_1">
+            <div class="image">
+                    <img src="bilder\kjokken3.jpg" class="start_image" id="kitchen_photo_3" alt="kitchen photo 3">
+                    <div class="zoomed_pictures" id="kitchen_photo_3_modal">
+                        <span class="close">&times;</span>
+                        <img class="zoomed_pictures_content">
+                    </div>
             </div>
-            <div class="grid-item">
-                <a>
-                    <img src="bilder\kjokken2.jpg" alt="kitchen photo 2">
-                </a>
+            <div class="image">
+                <img src="bilder\kjokken2.jpg" class="start_image" alt="kitchen photo 2">
+                <div class="zoomed_pictures">
+                    <span class="close">&times;</span>
+                    <img class="zoomed_pictures_content">
+                </div>
             </div>
-            <div class="grid-item">
-                <a>
-                    <img src="bilder\kjokken5.jpg" alt="kitchen photo 5">
-                </a>
+            <div class="image">
+                <img src="bilder\kjokken5.jpg" class="start_image" alt="kitchen photo 5">
+                <div class="zoomed_pictures">
+                    <span class="close">&times;</span>
+                    <img class="zoomed_pictures_content">
+                </div>
             </div>
-            <div class="grid-item">
-                <a>
-                    <img src="bilder\kjokken4.jpg" alt="kitchen photo 4">
-                </a>
+        </div>
+        <div id="image_collection_part_2">
+            <div class="image">
+                <img src="bilder\kjokken4.jpg" class="start_image" alt="kitchen photo 4">
+                <div class="zoomed_pictures">
+                    <span class="close">&times;</span>
+                    <img class="zoomed_pictures_content">
+                </div>
             </div>
-            <div class="grid-item">
-                <a>
-                    <img src="bilder\kjokken6.jpg" alt="kitchen photo 6">
-                </a>
+            <div class="image">
+                <img src="bilder\kjokken6.jpg" class="start_image" alt="kitchen photo 6">
+                <div class="zoomed_pictures">
+                    <span class="close">&times;</span>
+                    <img alt="kitchen photo 6" class="zoomed_pictures_content">
+                </div>
             </div>
-            <div class="grid-item">
-                <a>
-                    <img src="bilder\kjokken1.jpg" alt="kitchen photo 1">
-                </a>
+            <div class="image">
+                <img src="bilder\kjokken1.jpg" class="start_image" alt="kitchen photo 1">
+                <div class="zoomed_pictures">
+                    <span class="close">&times;</span>
+                    <img alt="kitchen photo 1" class="zoomed_pictures_content">
+                </div>
             </div>
-
         </div>
     </div>
+</div>
 
     <!-- ------------Footer------------- -->
-
-
-
     <footer>
         <div id="info_flex">
             <div id="info1">
@@ -88,8 +99,6 @@
         </div>
     </footer>
 </div>
-
-<script src="/path/to/isotope.pkgd.min.js"></script>
-<script src="produkter_skeleton.js"></script>
+<script src="pictureZoom.js"></script>
 </body>
 </html>

@@ -146,24 +146,30 @@ h2 {
     width: 100%;
 }
 
-.image {
+.start_image {
     margin-right: 15%;
     margin-bottom: 5%;
     float: left;
     width: 180px;
 }
 
-.image img:hover {
+.start_image img:hover {
     border: 1px solid #777;
 }
 
-.image img {
+.start_image img {
     width: 100%;
     height: auto;
 }
 
-#image_collection_part_1, #image_collection_part_2 {
+#image_collection_part_1, #image_collection_part_2, #image_collection_part_3 {
     display: flex;
+    height:40%
+}
+
+.start_image {
+    width: 20%;
+    height: auto;
 }
 /* ----------- Footer ----------- */
 footer {
