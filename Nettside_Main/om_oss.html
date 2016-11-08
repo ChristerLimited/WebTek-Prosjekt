@@ -9,26 +9,35 @@
 <body>
 
     <div id="wrapper">
-<!-- ------------NavBar------------- -->
+      
+<!-- ********** NavBar ********** -->
 <!-- Used to contain the nav. bar content. -->
-        <ul id="navbar_main">
-            <li><a class="nav_a">Produkter</a></li>
-            <li><a class="nav_a" href="om_oss.html">Om oss</a></li>
-            <li><a class="nav_a" id="main" href="startside.html">Steintøykjelleren</a></li>
-            <li><a class="nav_a">Kontakt oss</a></li>
-            <li><a class="nav_a">Tilbakemelding</a></li>
-        </ul>
+  <div class="navbar_wrapper">
+    <a class="main" id="main" onclick="mySlide()" href="#">Steintøykjelleren</a>
+    <a class="menu_item row_1" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
+    <a class="menu_item row_2" id="item-2" href="om_oss.html">Om oss</a>
+    <a class="menu_item row_2" id="item-3" href="#">Kontakt oss</a>
+    <a class="menu_item row_1" id="item-4" href="#">Tilbakemelding</a>
+    <!-- start interactive menu -->
+    <div id="product_menu" class="product_menu_min" href="#">
+      <a class="product">Bestikk</a>
+      <a class="product">Interiør</a>
+      <a class="product">Kjøkken</a>
+      <a class="product">Servise</a>
+    </div>
+    <!-- end interactive menu -->
+  </div>
 
-<!-- -----------Cover Photo---------- --> 
+<!-- ********** Cover Photo ********** -->
         <div class="cover_photo_container">
             <img src="bilder/kjokken4_short.jpeg" class = "responsive_cover_photo" alt="Kjeler og Kjøkken"> <h2 class="responsive_cover_text">
                 <span>Om Oss</span>
             </h2>
         </div>
-        
-<!-- ------------Content------------- -->
+
+<!-- ********** Content ********** -->
         <div id="content">
-            
+
             <div id="text">
                 <p>Steintøykjelleren ligger på Figgjo og ble startet av Bjørn Mæland i 1953. Nå er det barnebarna hans, Bjørn Reidar og Vigdis Mæland som driver butikken.</p>
 
@@ -46,8 +55,8 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2067.685605990079!2d5.812784416050388!3d58.7856956814719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463a3a091ee61369%3A0x1444942f74576e67!2sSteint%C3%B8ykjelleren+Figgjo!5e0!3m2!1sen!2sno!4v1477387438941" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
         </div>
-        
-    <!-- ------------Footer------------- -->
+
+    <!-- ********** Footer ********** -->
 
         <footer>
             <div id="info_flex">
@@ -65,7 +74,7 @@
                     <p>Søn: stengt</p>
                 </div>
             </div>
-            
+
             <div id="social">
                 <svg id="facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 0.4c-5.3 0-9.6 4.3-9.6 9.6s4.3 9.6 9.6 9.6 9.6-4.3 9.6-9.6S15.3 0.4 10 0.4zM12.3 7h-1.4c-0.2 0-0.4 0.2-0.4 0.5V8.6h1.8l-0.3 1.5H10.5v4.5H8.8v-4.5H7.2V8.6h1.5V7.7c0-1.3 0.9-2.3 2.1-2.3h1.4V7z"/></svg>
 
@@ -73,5 +82,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

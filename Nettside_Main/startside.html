@@ -9,19 +9,27 @@
 <body>
 
 <div id="wrapper">
-    <!-- ------------NavBar------------- -->
-    <!-- Used to contain the nav. bar content. -->
-    <ul id="navbar_main">
-        <li><a class="nav_a">Produkter</a></li>
-        <li><a class="nav_a" href="om_oss.html">Om oss</a></li>
-        <li><a class="nav_a" id="main" href="startside.html">Steintøykjelleren</a></li>
-        <li><a class="nav_a">Kontakt oss</a></li>
-        <li><a class="nav_a">Tilbakemelding</a></li>
-    </ul>
+  <!-- ********** NavBar ********** -->
+  <!-- Used to contain the nav. bar content. -->
+    <div class="navbar_wrapper">
+      <a class="main" id="main" onclick="mySlide()" href="#">Steintøykjelleren</a>
+      <a class="menu_item row_1" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
+      <a class="menu_item row_2" id="item-2" href="om_oss.html">Om oss</a>
+      <a class="menu_item row_2" id="item-3" href="#">Kontakt oss</a>
+      <a class="menu_item row_1" id="item-4" href="#">Tilbakemelding</a>
+      <!-- start interactive menu -->
+      <div id="product_menu" class="product_menu_min" href="#">
+        <a class="product">Bestikk</a>
+        <a class="product">Interiør</a>
+        <a class="product">Kjøkken</a>
+        <a class="product">Servise</a>
+      </div>
+      <!-- end interactive menu -->
+    </div>
 
     <!-- ------------Content------------- -->
     <!--------- Main image --------->
-    <img id="image1" src="bilder/kjokken6short.jpeg">
+    <img id="image1" src="bilder/servise5.jpg">
     <!-- Short text -->
     <div id="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet sollicitudin urna, vitae condimentum lorem. Nam aliquam magna eu fermentum efficitur. Suspendisse et tincidunt ex. Nam viverra dictum sapien non maximus. Curabitur eleifend tortor placerat eros vulputate accumsan. Integer posuere ligula at est mattis aliquam. Nam pellentesque dui sed mi blandit, mattis consequat dolor gravida. Fusce auctor turpis sapien, in feugiat orci varius quis. Donec rutrum commodo venenatis. Nullam in elit vel ante tincidunt ornare id eget risus. Duis consequat mollis felis, a elementum dolor placerat eget. Fusce tincidunt lobortis nisi a gravida. Aliquam sed velit auctor, molestie tortor lobortis, mattis elit.</p>
@@ -53,9 +61,9 @@
             <div id="empty_space"></div>
             <div id="info2">
                 <H3>Åpningstider</H3>
+                <p id="yolo"></p>
                 <p>Man-Fre: 09-19</p>
                 <p>Lør: 09-16</p>
-                <p>Søn: stengt</p>
             </div>
         </div>
 
@@ -66,5 +74,6 @@
         </div>
     </footer>
 </div>
+    <script type="text/javascript" src="startside.js"></script>
 </body>
 </html>
