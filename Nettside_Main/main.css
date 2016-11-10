@@ -127,16 +127,16 @@ html, body {
 /* -------- Content for contact page --------- */
 #content_kontakt {
     padding-top: 20px;
-    margin-left: 10%;
+    margin-left: 20px;
     width: 20%;
+    padding-right: 40px;
 }
 
-#instagram-feed {
-    padding-top: 5px;
-}
 
 #content_wrapper {
     display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 #content_kontakt_info {
