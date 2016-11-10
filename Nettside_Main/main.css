@@ -90,7 +90,22 @@ html, body {
 }
 
 .product_menu_min {
-  display: none;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: -100%;
+  transition: 1s;
+}
+
+.product_menu_max_start {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: -100%;
+}
+
+.product_menu_max_end {
+  display: flex;
   justify-content: space-around;
 }
 
