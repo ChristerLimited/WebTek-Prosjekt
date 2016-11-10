@@ -4,6 +4,8 @@ html, body {
     padding: 0;
 
     background-color: #f7f6f6;
+    font-family: 'Raleway', sans-serif;
+
 }
 
 /* Wrapper: Helps keep footer at bottom */
@@ -95,7 +97,7 @@ html, body {
 
     color: black;
 
-    font-family: 'Raleway', sans-serif;
+    /*font-family: 'Raleway', sans-serif;*/
     font-size: 1em;
     line-height: 36px;
 }
@@ -178,23 +180,20 @@ h2 {
     height: 180px;
 }
 
-#instabox {
-    position: inherit;
-    bottom: 20px;
+#instagram_text{
+    text-align: center;
+}
 
-    width: 65%;
-    height: 350px;
+#instagram-feed {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     margin: auto;
+    width: 50%;
 
-    border-style: double;
-    background-color: rgba(205, 201, 201, 0.1);
+    /*width: calc(max?? - 20%);*/
 }
 
-#instabox a {
-    position: absolute;
-
-    padding: 140px 0 0 44%;
-}
 
 /*------------ Produkter -------- */
 
