@@ -59,6 +59,10 @@ html, body {
   color: darkslategrey;
 }
 
+.navbar_wrapper a:not(.main):link {
+  color: darkslategrey;
+}
+
 .navbar_wrapper a:not(.main):visited {
   color: darkslategrey;
 }
