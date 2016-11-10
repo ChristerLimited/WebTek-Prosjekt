@@ -227,6 +227,12 @@ h3 {
     line-height: 15px;
 }
 
+#time {
+    border-bottom: solid;
+    border-width: thin;
+    padding-bottom: 5px;
+}
+
 #empty_space {
     width: 50px;
 }

@@ -13,13 +13,13 @@ function checkOpen() {
     /* -------- For weekday --------- */
     if (day < 6) {
         if ((1140 - timeinMin < 60) && (timeinMin < 1140)) {
-            yolo.innerHTML = "Stenger snart"
+            time.innerHTML = "Stenger snart"
         }
         else if ((timeinMin > 540) && (timeinMin < 1140)) {
-            yolo.innerHTML = "Åpent nå"
+            time.innerHTML = "Åpent nå"
         }
         else {
-            yolo.innerHTML = "Stengt"
+            time.innerHTML = "Stengt"
         }
     }
 
@@ -27,18 +27,18 @@ function checkOpen() {
     /* -------- For weekday --------- */
     else if (day == 6) {
         if ((960 - timeinMin < 60) && (timeinMin < 960)) {
-            yolo.innerHTML = "Stenger snart"
+            time.innerHTML = "Stenger snart"
         }
         else if ((timeinMin > 540) && (timeinMin < 960)) {
-            yolo.innerHTML = "Åpent nå"
+            time.innerHTML = "Åpent nå"
         }
         else {
-            yolo.innerHTML = "Stengt"
+            time.innerHTML = "Stengt"
         }
     }
 
     else {
-        yolo.innerHTML = "Stengt"
+        time.innerHTML = "Stengt"
     }
 }
 
