@@ -12,11 +12,7 @@ function myDropdown() {
 function slideOut(submenu, wrapper) {
   submenu.style.left = '0%';
   wrapper.style.top = '0px';
-
-  // var height = wrapper.height;
-  // console.log(height);
-  // var newHeight = height + 200;
-  // wrapper.style.height = newHeight + 'px';
+  
   // once( 0, function () {
   //   submenu.style.left = '0%';
   //   // submenu.className = 'product_menu_max_end';
