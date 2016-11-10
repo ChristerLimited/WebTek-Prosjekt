@@ -15,9 +15,9 @@ function slideOut(submenu, tohide) {
   for (var i = 0; i < tohide.length; i++) {
     tohide[i].style.display = 'none';
   }
-  once( 1, function () {
-    submenu.className = 'product_menu_max';
-  });
+  // once( 1, function () {
+  //   submenu.className = 'product_menu_max';
+  // });
 }
 
 function slideBack(submenu, toshow) {
