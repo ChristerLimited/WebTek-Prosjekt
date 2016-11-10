@@ -1,19 +1,20 @@
 function myDropdown() {
-  var wrapper = document.getElementById('navbar_wrapper');
-  var product_menu = document.getElementById('product_menu');
+  var pageWrapper = document.getElementById('page_wrapper');
+  var productMenu = document.getElementById('product_menu');
 
   if (product_menu.style.left == '-100%') {
-    slideOut(product_menu, wrapper);
+    slideOut(productMenu, pageWrapper);
   } else {
-    slideBack(product_menu, wrapper);
+    slideBack(productMenu, pageWrapper);
   }
 }
 
 function slideOut(submenu, wrapper) {
   submenu.style.left = '0%';
+  wrapper.style.top = '0px';
 
-  // var height = wrapper.offsetHeight;
-  // console.log(clientHeight);
+  // var height = wrapper.height;
+  // console.log(height);
   // var newHeight = height + 200;
   // wrapper.style.height = newHeight + 'px';
   // once( 0, function () {
@@ -22,8 +23,9 @@ function slideOut(submenu, wrapper) {
   // });
 }
 
-function slideBack(submenu, toshow) {
+function slideBack(submenu, wrapper) {
   submenu.style.left = '-100%';
+  wrapper.style.top = '-80px';
 }
 
 function once (seconds, callback) {
