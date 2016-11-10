@@ -133,7 +133,6 @@ html, body {
 
 /* -------- Content for contact page --------- */
 #content_kontakt {
-    padding-top: 20px;
     margin-left: 20px;
     width: 20%;
     padding-right: 40px;
@@ -144,6 +143,8 @@ html, body {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #content_kontakt_info {
