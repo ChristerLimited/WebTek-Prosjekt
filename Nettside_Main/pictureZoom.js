@@ -7,7 +7,6 @@ window.onload = function() {
     for (i = 0; i < zoomedPicturesModules.length; i++) {
         const currentModule = zoomedPicturesModules[i];
         const currentModalImage = zoomedPictures[i];
-        const currentModuleChildren = currentModule.childNodes;
         const currentImage = startImages[i];
         const currentCloseSpan = closeSpans[i];
         currentCloseSpan.onclick = function() {
