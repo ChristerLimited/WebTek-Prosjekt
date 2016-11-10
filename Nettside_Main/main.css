@@ -106,6 +106,26 @@ html, body {
     line-height: 36px;
 }
 
+/* -------- Content for contact page --------- */
+#content_kontakt {
+    padding-top: 20px;
+    margin-left: 10%;
+    width: 20%;
+}
+
+#instagram-feed {
+    padding-top: 5px;
+}
+
+#content_wrapper {
+    display: inline-flex;
+}
+
+#content_kontakt_info {
+    font-size: 14px;
+}
+
+
 /* ---- Cover Photo ---- */
 .cover_photo_container, #image1 {
     position: relative;
@@ -160,7 +180,7 @@ h2 {
     width: 90%;
 }
 
-#image_menu {
+#image_menu, #instagram-feed {
     position: relative;
     left: 7.5%;
 
@@ -186,16 +206,7 @@ h2 {
 
 #instagram_text{
     text-align: center;
-}
-
-#instagram-feed {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    margin: auto;
-    width: 50%;
-
-    /*width: calc(max?? - 20%);*/
+    display: none;
 }
 
 
