@@ -220,20 +220,41 @@ h2 {
     justify-content: space-around;
     align-items: center;
 }
-
-#image2, #image3, #image4, #image5 {
-    height: 200px;
-    padding-bottom: 15px;
+#image2 {
+    background: url("bilder/interior7.jpg") no-repeat;
+    height: 220px;
+    background-size: 95% 95%;
+    width: 275px;
+}
+#image3 {
+    background: url("bilder/kjokken6.jpg") no-repeat;
+}
+#image4 {
+    background: url("bilder/servise4.jpg") no-repeat;
+}
+#image5 {
+    background: url("bilder/bestikk7.jpg") no-repeat;
 }
 
-#image4, #image5 {
-    height: 180px;
+#image3, #image4, #image5 {
+    height: 220px;
+    background-size: 95% 95%;
+    width: 280px;
 }
 
-#instagram_text{
-    text-align: center;
-    display: none;
+#imageText1, #imageText2, #imageText3, #imageText4 {
+    position: absolute;
+    z-index: 1;
+    color: darkgreen;
+    background-color: rgba(237, 221, 221, 0.7);
+    padding: 2px 5px 2px 5px;
+    border-radius: 10%;
+    opacity: 0;
+    pointer-events: none;
+
 }
+
+
 
 
 /*------------ Produkter -------- */
