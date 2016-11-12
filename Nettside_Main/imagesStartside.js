@@ -1,5 +1,5 @@
 /**
- * Created by PederGB on 11.11.2016.
+ * Created by Peder Grundvold on 11.11.2016.
  */
 var images = ["image1","image2","image3","image4"]
 imageText1 = document.getElementById("imageText1");
@@ -7,14 +7,14 @@ imageText2 = document.getElementById("imageText2");
 newFade = 0;
 
 var mouse = true
-function setFade() {
+function setFade() { /* Change mouse to false if mouse leaves the imagebox */
     mouse = false
 }
 
 /* -- ImageMenu First -- */
 function changeHover0() {
     mouse = true
-    document.getElementById(images[0]).addEventListener("mouseout", setFade)
+    document.getElementById(images[0]).addEventListener("mouseout", setFade) /* Check if mouse goes out while function is running */
     document.getElementById(images[0]).style.height = "225px";
     document.getElementById(images[0]).style.width = "280px";
 
@@ -22,15 +22,15 @@ function changeHover0() {
     setTimeout (function () {
         imageText1.style.opacity = newFade;
         newFade+=0.005;
-        if (newFade < 1 && mouse == true) changeHover0()
-        else newFade=0
+        if (newFade < 1 && mouse == true) changeHover0() /* The function only restarts if the mouse is still inside the image */
+        else newFade=0 /* If the mouse leaves while function is running it will quit and return the opacity */
         imageText2.style.opacity = 0;
         imageText3.style.opacity = 0;
         imageText4.style.opacity = 0;
     }, 0.01)
 }
 
-function returnHover0() {
+function returnHover0() { /* Return to original on mouseout */
     document.getElementById(images[0]).style.height = "220px";
     document.getElementById(images[0]).style.width = "275px";
     document.getElementById(images[0]).style.opacity = "1";
@@ -38,10 +38,11 @@ function returnHover0() {
     newFade = 0
 }
 
-function linkFirst() {
+function linkFirst() { /* Creates the respected link */
     window.open("produkter_interior.html", "_self");
 }
 
+/* --------------------------------- Reapeted code, (issue with arguments) ---------------------------- */
 /* -- ImageMenu Second -- */
 function changeHover1() {
     mouse = true
@@ -132,8 +133,9 @@ function linkFourth() {
     window.open("produkter_bestikk.html", "_self");
 }
 
-/* -- Event Listeners -- */
+/* -------------------------------------------------------------------- */
 
+/* -- Event Listeners -- */
 document.getElementById(images[0]).addEventListener("mouseover", changeHover0);
 document.getElementById(images[0]).addEventListener("mouseout", returnHover0);
 document.getElementById(images[0]).addEventListener("click", linkFirst);
