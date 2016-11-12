@@ -34,12 +34,18 @@
   <!-- Div to push content down for product menu -->
   <div id="page_wrapper">
 
-    <!-- ------------Content------------- -->
-    <img class="cover_photo_container" src="..\bilder\kitchen_coverphoto_final.jpg" alt="kitchen cover photo">
+    <!-- ********** Cover Photo ********** -->
+    <div class="cover_photo_container">
+        <img src="..\bilder\kitchen_coverphoto_final.jpg" class="responsive_cover_photo" alt="Kjeler og Kjøkken">
+        <h2 class="responsive_cover_text">
+            <span>Om Oss</span>
+        </h2>
+    </div>
 
+    <!-- ******** Content ******** -->
     <div id="content">
-        <p>Her er noen av våre kjøkkenrelaterte produkter (trykk på bildet for å gjøre det større):</p>
-        <div id="image_collection_part_1">
+        <p id="produkter_text">Her er noen av våre kjøkkenrelaterte produkter (trykk på bildet for å gjøre det større):</p>
+        <div class="image_flex">
             <div class="image">
                     <img src="bilder\kjokken3.jpg" class="start_image" id="kitchen_photo_3" alt="kitchen photo 3">
                     <div class="zoomed_pictures" id="kitchen_photo_3_modal">
@@ -61,8 +67,6 @@
                     <img class="zoomed_pictures_content">
                 </div>
             </div>
-        </div>
-        <div id="image_collection_part_2">
             <div class="image">
                 <img src="bilder\kjokken4.jpg" class="start_image" alt="kitchen photo 4">
                 <div class="zoomed_pictures">
@@ -86,9 +90,9 @@
             </div>
         </div>
     </div>
-</div>
+  </div>
 
-    <!-- ------------Footer------------- -->
+    <!-- ******** Footer ******** -->
     <footer>
         <div id="info_flex">
             <div id="info1">

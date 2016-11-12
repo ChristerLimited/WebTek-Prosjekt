@@ -9,47 +9,67 @@
 <body>
 
 <div id="wrapper">
-  <!-- ********** NavBar ********** -->
-  <!-- Used to contain the nav. bar content. -->
-  <div class="navbar_wrapper">
-    <div class="main_menu">
-      <a class="main" id="main" href="startside.html">Steintøykjelleren</a>
-      <a class="menu_item row_1" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
-      <a class="menu_item row_2" id="item-2" href="om_oss.html">Om oss</a>
-      <a class="menu_item row_2" id="item-3" href="kontakt.html">Kontakt oss</a>
-      <a class="menu_item row_1 current_page" id="item-4" href="tilbakemelding.html">Tilbakemelding</a>
+    <!-- ********** NavBar ********** -->
+    <!-- Used to contain the nav. bar content. -->
+    <div class="navbar_wrapper">
+        <div class="main_menu">
+            <a class="main" id="main" href="startside.html">Steintøykjelleren</a>
+            <a class="menu_item row_1" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
+            <a class="menu_item row_2" id="item-2" href="om_oss.html">Om oss</a>
+            <a class="menu_item row_2" id="item-3" href="kontakt.html">Kontakt oss</a>
+            <a class="menu_item row_1" id="item-4" href="tilbakemelding.html">Tilbakemelding</a>
+        </div>
+        <!-- start interactive menu --> <!-- inline style is here for javascript -->
+        <div id="product_menu" class="product_menu" style="left: -100%;">
+            <a class="product" href="produkter_bestikk.html">Bestikk</a>
+            <a class="product" href="produkter_interior.html">Interiør</a>
+            <a class="product" href="produkter_kjokken.html">Kjøkken</a>
+            <a class="product" href="produkter_servise.html">Servise</a>
+        </div>
+        <!-- end interactive menu -->
     </div>
-    <!-- start interactive menu -->
-    <!-- Note:  inline style set because navbar_script checks if the menu's style attribute is set to -100% -->
-    <div id="product_menu" class="product_menu" style="left: -100%;">
-      <a class="product" href="produkter_bestikk.html">Bestikk</a>
-      <a class="product" href="produkter_interior.html">Interiør</a>
-      <a class="product" href="produkter_kjokken.html">Kjøkken</a>
-      <a class="product" href="produkter_servise.html">Servise</a>
+
+    <!-- Div to push content down for product menu -->
+    <div id="page_wrapper">
+
+    <!-- ------------Content------------- -->
+
+    <div id="tekst">
+        <p>
+            Vi vil veldig gjerne få tilbakemeldinger om siden. Gi oss ris eller ros, så skal vi se på det du lurer på.
+            Fyll ut feltene nedenfor, så kan vi svare deg på epost.<br>
+            Mvh fra oss på Steintøykjelleren.
+        </p>
     </div>
-    <!-- end interactive menu -->
-  </div>
 
-  <!-- Div to push content down for product menu -->
-  <div id="page_wrapper">
 
-    <!-- ******** Content ******** -->
-    <form id="tilbakemelding">
-        <label for="First_name">Fornavn:</label>
-        <input type="text" name="Fornavn" id="First_name" placeholder="Ola" required><br>
-        Etternavn:<br>
-        <input type="text" name="Etternavn" placeholder="Nordmann" required><br>
-        Email:<br>
-        <input type="email" name="Email" placeholder="some@email.com" required><br>
-        <br>
-        Skriv til oss:<br>
-        <textarea name="melding" rows="40" cols="50" placeholder="Hvis du har en tilbakemelding, eller bare et spørsmål. Ikke nøl med å skrive til oss!" required></textarea>
-        <br>
-        <input type="submit" value="Send">
-    </form>
-  </div>
 
-    <!-- ******** Footer ******** -->
+    <div id="tilbake_melding">
+        <form id="tilbakemelding" name="tilbakemeldingform">
+            <label for="First_name">Fornavn:</label>
+            <input type="text" name="Fornavn" id="First_name" placeholder="Ola" required onblur="checkForEmptyFields()"><br>
+            <br>
+            <label for="Last_name">Etternavn:</label>
+            <input type="text" name="Etternavn" id="Last_name" placeholder="Nordmann" required onblur="checkForEmptyFields()" ><br>
+            <br>
+            <label for="mail">Email:</label>
+            <input type="email" name="Email" id="mail" placeholder="some@email.com" required onblur="checkForEmptyFields()" ><br>
+            <br>
+            <label for="Melding">Skriv til oss:</label>
+            <textarea name="melding" id="Melding" placeholder="Hvis du har en tilbakemelding, eller bare et spørsmål. Ikke nøl med å skrive til oss!" required onblur="checkForEmptyFields()" ></textarea><br>
+            <br>
+            <input type="submit" value="Submit" onclick="send()">
+        </form>
+    </div>
+
+    <div id="overliste">
+        <ul id="formliste">
+        </ul>
+    </div>
+    </div>
+</div>
+    <!-- ------------Footer------------- -->
+
     <footer>
         <div id="info_flex">
             <div id="info1">

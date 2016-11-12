@@ -15,8 +15,8 @@
   <div class="navbar_wrapper">
     <div class="main_menu">
       <a class="main" id="main" href="startside.html">Steintøykjelleren</a>
-      <a class="menu_item row_1" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
-      <a class="menu_item row_2 current_page" id="item-2" href="om_oss.html">Om oss</a>
+      <a class="menu_item row_1 current_page" id="item-1" onClick="myDropdown()" href="#">Produkter</a>
+      <a class="menu_item row_2" id="item-2" href="om_oss.html">Om oss</a>
       <a class="menu_item row_2" id="item-3" href="kontakt.html">Kontakt oss</a>
       <a class="menu_item row_1" id="item-4" href="tilbakemelding.html">Tilbakemelding</a>
     </div>
@@ -34,12 +34,20 @@
   <!-- Div to push content down for product menu -->
   <div id="page_wrapper">
 
-    <!-- ------------Content------------- -->
-    <img class="cover_photo_container" src="..\bilder\kitchen_coverphoto_final.jpg" alt="kitchen cover photo">
+    <!-- ********** Cover Photo ********** -->
+    <div class="cover_photo_container">
+        <img src="..\bilder\kitchen_coverphoto_final.jpg" class="responsive_cover_photo" alt="Kjeler og Kjøkken">
+        <h2 class="responsive_cover_text">
+            <span>Om Oss</span>
+        </h2>
+    </div>
+
+    <!-- ******** Content ******** -->
+    <!-- <img class="cover_photo_container" src="..\bilder\kitchen_coverphoto_final.jpg" alt="kitchen cover photo"> -->
 
     <div id="content">
-        <p>Her er noen av våre interiørrelaterte produkter (trykk på bildet for å gjøre det større):</p>
-        <div id="image_collection_part_1">
+        <p id="produkter_text">Her er noen av våre interiørrelaterte produkter (trykk på bildet for å gjøre det større):</p>
+        <div class="image_flex">
             <div class="image">
                 <img src="bilder/interior1.jpg" class="start_image" alt="kitchen photo 3">
                 <div class="zoomed_pictures">
@@ -61,8 +69,6 @@
                     <img class="zoomed_pictures_content">
                 </div>
             </div>
-        </div>
-        <div id="image_collection_part_2">
             <div class="image">
                 <img src="bilder/interior7.jpg" class="start_image" alt="kitchen photo 1">
                 <div class="zoomed_pictures">
@@ -77,31 +83,25 @@
                     <img class="zoomed_pictures_content">
                 </div>
             </div>
-        </div>
-        <div id="image_collection_part_3">
             <div class="image">
                 <img src="bilder/interior6.jpg" class="start_image" alt="kitchen photo 1">
                 <div class="zoomed_pictures">
                     <span class="close">&times;</span>
                     <img class="zoomed_pictures_content">
                 </div>
-
-                <div class="image">
-                    <img src="bilder/interior4.jpg" class="start_image" alt="kitchen photo 4">
-                    <div class="zoomed_pictures">
-                        <span class="close">&times;</span>
-                        <img class="zoomed_pictures_content">
-                    </div>
+            </div>
+            <div class="image">
+                <img src="bilder/interior4.jpg" class="start_image" alt="kitchen photo 4">
+                <div class="zoomed_pictures">
+                    <span class="close">&times;</span>
+                    <img class="zoomed_pictures_content">
                 </div>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
-    <!-- ------------Footer------------- -->
-
-
-
+    <!-- ******** Footer ******** -->
     <footer>
         <div id="info_flex">
             <div id="info1">
