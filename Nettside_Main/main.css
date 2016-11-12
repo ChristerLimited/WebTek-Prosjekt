@@ -324,33 +324,75 @@ h3 {
 }
 
 /*--- Tilbakemelding ---*/
-input[type=text]{
-    width:20%;
 
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #f8f8f8;
+#tilbakemelding{
+    text-align: center;
+    width: 100%;
+
+}
+form{
+    display: inline-block;
+    width: 50%;
+
+}
+label{
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    color: black;
 }
 
-input[type=email]{
-    width:20%;
 
+input[type=text]{
+    width:20%;
+    background-color: #f8f8f8;
     border: 2px solid #ccc;
     border-radius: 4px;
+}
+input[type=email]{
+    width:20%;
     background-color: #f8f8f8;
+    border: 2px solid #ccc;
+    border-radius: 4px;
 }
 
 textarea {
-    box-sizing: border-box;
     width: 40%;
     height: 150px;
     padding: 12px 20px;
-
-    resize: none;
-
+    box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
-
     font-size: 16px;
+    resize: none;
+}
+
+input[type=submit]{
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#tekst{
+    width: 45%;
+    position: relative;
+    left: 28%;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+#overliste{
+    height: 50px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    bottom: 240px;
+    width: 30%;
+    left: 5%;
+
+}
+
+#formliste{
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    list-style: Upper-roman;
 }
