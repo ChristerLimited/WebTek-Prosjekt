@@ -1,7 +1,7 @@
 /**
  * Created by PederGB on 11.11.2016.
  */
-var images = ["image2","image3","image4","image5"]
+var images = ["image1","image2","image3","image4"]
 imageText1 = document.getElementById("imageText1");
 imageText2 = document.getElementById("imageText2");
 newFade = 0;
