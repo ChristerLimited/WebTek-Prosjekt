@@ -1,0 +1,26 @@
+body {
+	background-color: rgb(230,230,230);
+	color: rgb(40,40,40);
+	font-family: Georgia, Helvetica;
+}
+
+header, section, footer {	
+	line-height: 150%;
+	max-width: 65ch;
+	margin: auto;
+}
+
+footer {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 2%;
+}
+
+#file_table, th, td {
+	border: 1px solid black;
+}
+
+img {
+	max-width: 70%;
+	max-height: 50%;
+}
