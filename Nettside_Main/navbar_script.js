@@ -12,25 +12,9 @@ function myDropdown() {
 function slideOut(submenu, wrapper) {
   submenu.style.left = '0%';
   wrapper.style.top = '0px';
-  
-  // once( 0, function () {
-  //   submenu.style.left = '0%';
-  //   // submenu.className = 'product_menu_max_end';
-  // });
 }
 
 function slideBack(submenu, wrapper) {
   submenu.style.left = '-100%';
   wrapper.style.top = '-80px';
-}
-
-function once (seconds, callback) {
-	var counter = 0;
-	var time = window.setInterval( function () {
-		counter++;
-		if ( counter >= seconds ) {
-			callback();
-			window.clearInterval( time );
-		}
-	}, 1000 );
 }
