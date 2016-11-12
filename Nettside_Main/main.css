@@ -141,7 +141,7 @@ html, body {
 
 
 /* ---- Cover Photo ---- */
-.cover_photo_container, #image1 {
+.cover_photo_container, #imageMain {
     position: relative;
 
     display: block;
@@ -190,7 +190,7 @@ h2 {
 }
 
 /* ------------- Landing page ------------ */
-#image1 {
+#imageMain {
     width: 90%;
 }
 
@@ -208,26 +208,28 @@ h2 {
     justify-content: space-around;
     align-items: center;
 }
-#image2 {
+#image1 {
     background: url("bilder/interior7.jpg") no-repeat;
     height: 220px;
     background-size: 95% 95%;
     width: 275px;
+    cursor: pointer;
 }
-#image3 {
+#image2 {
     background: url("bilder/kjokken6.jpg") no-repeat;
 }
-#image4 {
+#image3 {
     background: url("bilder/servise4.jpg") no-repeat;
 }
-#image5 {
+#image4 {
     background: url("bilder/bestikk7.jpg") no-repeat;
 }
 
-#image3, #image4, #image5 {
+#image2, #image3, #image4 {
     height: 220px;
     background-size: 95% 95%;
     width: 280px;
+    cursor: pointer;
 }
 
 #imageText1, #imageText2, #imageText3, #imageText4 {
@@ -321,6 +323,7 @@ h3 {
     padding-left: 10px;
 
     fill: #ffffff;
+    cursor: pointer;
 }
 
 /*--- Tilbakemelding ---*/

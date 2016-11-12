@@ -19,7 +19,8 @@
       <a class="menu_item row_2" id="item-3" href="kontakt.html">Kontakt oss</a>
       <a class="menu_item row_1" id="item-4" href="tilbakemelding.html">Tilbakemelding</a>
     </div>
-    <!-- start interactive menu --> <!-- inline style is here for javascript -->
+    <!-- start interactive menu -->
+    <!-- Note:  inline style set because navbar_script checks if the menu's style attribute is set to -100% -->
     <div id="product_menu" class="product_menu" style="left: -100%;">
       <a class="product" href="produkter_bestikk.html">Bestikk</a>
       <a class="product" href="produkter_interior.html">Interiør</a>
@@ -34,7 +35,7 @@
 
     <!-- ------------Content------------- -->
     <!--------- Main image --------->
-    <img id="image1" src="bilder/servise5.jpg">
+    <img id="imageMain" src="bilder/servise5.jpg">
     <!-- Short text -->
     <div id="content">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet sollicitudin urna, vitae condimentum lorem. Nam aliquam magna eu fermentum efficitur. Suspendisse et tincidunt ex. Nam viverra dictum sapien non maximus. Curabitur eleifend tortor placerat eros vulputate accumsan. Integer posuere ligula at est mattis aliquam. Nam pellentesque dui sed mi blandit, mattis consequat dolor gravida. Fusce auctor turpis sapien, in feugiat orci varius quis. Donec rutrum commodo venenatis. Nullam in elit vel ante tincidunt ornare id eget risus. Duis consequat mollis felis, a elementum dolor placerat eget. Fusce tincidunt lobortis nisi a gravida. Aliquam sed velit auctor, molestie tortor lobortis, mattis elit.</p>
@@ -42,16 +43,16 @@
 
     <!--------- Image menu ---------->
       <div id="image_menu">
-          <div id="image2">
+          <div id="image1">
               <p id="imageText1">Gå til produktside for interiør</p>
           </div>
-          <div id="image3">
+          <div id="image2">
               <p id="imageText2">Gå til produktside for kjøkken</p>
           </div>
-          <div id="image4">
+          <div id="image3">
             <p id="imageText3">Gå til produktside for servise</p>
           </div>
-          <div id="image5">
+          <div id="image4">
             <p id="imageText4">Gå til produktside for bestikk</p>
           </div>
       </div>
@@ -83,7 +84,7 @@
   </footer>
 </div>
     <script type="text/javascript" src="imagesStartside.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="navbar_script.js"></script>
     <script type="text/javascript" src="getTime.js"></script>
     <script type="text/javascript" src="linkSocial_inFooter.js"></script>
 </body>
