@@ -1,3 +1,10 @@
+<!--
+FILE NAME: kontakt.html
+WRITTEN BY: Peder Grundvold
+WHEN: November 2016
+PURPOSE: A subpage that gives information on how to contact the store. It also have some social links and feeds.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +15,6 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway" rel="stylesheet">
 </head>
 <body>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="wrapper">
     <!-- ********** NavBar ********** -->
@@ -57,7 +57,7 @@
 
 
         <!---------- Instafeed ---------->
-        <div>
+        <div> <!-- Using facebook and instagram feeds with code provided by the given pages -->
             <blockquote id="feed1" class="instagram-media" data-instgrm-captioned data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:200px; max-height:301px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BLxu41EDx1B/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">50% på Poul Pava gavesett 1ltr karafell og 4 glass Nå kr 199,- veil kr 399,- Glass kan kjøpes seperat #steintøykjelleren #poulpava #aida #greatguys #perfektgave #nærmersegjul #snartfarsdag</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">Et bilde publisert av Steintøykjelleren (@steintoykjelleren) <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-10-20T07:54:05+00:00">torsdag 20. Okt.. 2016 PDT</time></p></div></blockquote> <script async defer src="http://platform.instagram.com/en_US/embeds.js"></script>
         </div>
         <div id="fb-root">
@@ -91,7 +91,16 @@
         </div>
     </footer>
 </div>
+    <script>(function(d, s, id) { <!-- Facebook provided this code to make the facebook feed. They also urged that is should be written directly into the html. -->
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/nb_NO/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <script type="text/javascript" src="getTime.js"></script>
     <script type="text/javascript" src="navbar_script.js"></script>
-    <script type="text/javascript" src="linkSocial_inFooter.js"></script></body>
+    <script type="text/javascript" src="linkSocial_inFooter.js"></script>
+</body>
 </html>
