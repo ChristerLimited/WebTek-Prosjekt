@@ -1,5 +1,9 @@
 /**
- * Created by Peder Grundvold on 03.11.2016.
+ *
+ * FILE NAME: getTime.js
+ * WRITTEN BY: Peder Grundvold
+ * WHEN: November 2016
+ * PURPOSE: Tells the user whether the store is open now or not.
  */
 
 /* --- Gets time of day --- */

@@ -1,6 +1,9 @@
 // ******************************
-// Created by Paul Erik Frivold
-// November 2016
+// FILE NAME: navbar_script.js
+// WRITTEN BY: Paul Erik Frivold
+// WHEN: November 2016
+// PURPOSE: Adds dropdown functionality to the web site.
+//
 // ******************************
 
 // myDropdown() is called when Produkter is clicked.

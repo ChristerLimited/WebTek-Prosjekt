@@ -1,5 +1,10 @@
 /**
- * Created by snotu on 10.11.2016.
+ * <!--
+ * FILE NAME: checkForEmptyFields.js
+ * WRITTEN BY: Vemund Bolset Mollestad
+ * WHEN: November 2016
+ * PURPOSE: Adds empty form fields dynamically to a specified UL.
+ -->
  */
 
 window.onload = function() {
