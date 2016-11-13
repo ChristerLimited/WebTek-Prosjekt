@@ -310,19 +310,19 @@ h3 {
 
 /*--- Tilbakemelding ---*/
 
-#tilbakemelding{
+#tilbakemelding {
     width: 100%;
 
     text-align: center;
 
 }
-form{
+form {
     display: inline-block;
 
     width: 50%;
 
 }
-label{
+label {
     display: block;
 
     color: black;
@@ -331,14 +331,14 @@ label{
 }
 
 
-input[type=text]{
+input[type=text] {
     width:20%;
 
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
 }
-input[type=email]{
+input[type=email] {
     width:20%;
 
     border: 2px solid #ccc;
@@ -361,13 +361,13 @@ textarea {
     font-size: 16px;
 }
 
-input[type=submit]{
+input[type=submit] {
     position: relative;
 
     margin-bottom: 5%;
 }
 
-#tekst{
+#tekst {
     position: relative;
     left: 28%;
 
@@ -378,7 +378,7 @@ input[type=submit]{
     font-family: 'Raleway', sans-serif;
 }
 
-#overliste{
+#overliste {
     position: relative;
     bottom: 240px;
     left: 5%;
@@ -389,10 +389,9 @@ input[type=submit]{
     color: black;
 
     font-family: 'Raleway', sans-serif;
-
 }
 
-#formliste{
+#formliste {
     list-style: Upper-roman;
 
     color: black;
