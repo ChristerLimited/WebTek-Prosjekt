@@ -7,7 +7,7 @@ var instagramIcon = document.getElementById("instagram");
 /* --- Change instagram on hover --- */
 function changeIconIns() {
     instagramIcon.style.height = "83px";
-    instagramIcon.style.fill = "#EFF0F0";
+    instagramIcon.style.fill = "rgb(174, 238, 54)";
     facebookIcon.style.bottom = "3px";
     facebookIcon.style.left = "3px";
 }
@@ -21,7 +21,7 @@ function returnIconIns() {
 /* --- Change facebook on hover --- */
 function changeIconFace() {
     facebookIcon.style.height = "83px";
-    facebookIcon.style.fill = "#EFF0F0";
+    facebookIcon.style.fill = "rgb(255, 191, 0)";
     instagramIcon.style.bottom = "3px";
     instagramIcon.style.left = "0";
 }
@@ -47,7 +47,3 @@ facebookIcon.addEventListener("mouseout", returnIconFace);
 
 instagramIcon.addEventListener("click", linkIns);
 facebookIcon.addEventListener("click", linkFace);
-
-
-
-
