@@ -4,6 +4,7 @@ html, body {
     padding: 0;
 
     background-color: #f7f6f6;
+
     font-family: 'Raleway', sans-serif;
 }
 
@@ -16,9 +17,8 @@ html, body {
 
 /* ---------- NavBar ----------- */
 .navbar_wrapper {
-  padding-bottom: 10px;
-
   min-height: 50px;
+  padding-bottom: 10px;
 
   text-align: center;
 }
@@ -28,7 +28,6 @@ html, body {
 
   flex-flow: row wrap;
   align-items: center;
-
   /*flex: 1 100%;*/
     flex: 100%;
 }
@@ -94,17 +93,21 @@ html, body {
 }
 
 .product_menu {
-  display: flex;
-  justify-content: space-around;
   position: relative;
   left: -100%;
+
+  display: flex;
+
   transition: 1s;
+
+  justify-content: space-around;
 }
 
 /* ----------- Content ----------- */
 #page_wrapper {
   position: relative;
   top: -80px;
+
   transition: top 1s;
 }
 
@@ -123,18 +126,20 @@ html, body {
 
 /* -------- Content for contact page --------- */
 #content_kontakt {
-    margin-left: 20px;
     width: 20%;
+    margin-left: 20px;
     padding-right: 40px;
 }
 
 
 #content_wrapper {
     display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+
     padding-top: 15px;
     padding-bottom: 15px;
+
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 #content_kontakt_info {
@@ -186,6 +191,7 @@ h2 {
     display: flex;
 
     width: 100%;
+
     justify-content: space-around;
 }
 
@@ -212,40 +218,11 @@ h2 {
     justify-content: space-around;
     align-items: center;
 }
-#image1 {
-    background: url("reduced_images/rsz_interior7.jpg") no-repeat;
-    height: 220px;
-    background-size: 95% 95%;
-    width: 275px;
-    cursor: pointer;
-}
-#image2 {
-    background: url("reduced_images/rsz_kjokken6.jpg") no-repeat;
-}
-#image3 {
-    background: url("reduced_images/rsz_servise4.jpg") no-repeat;
-}
-#image4 {
-    background: url("reduced_images/rsz_1bestikk7.jpg") no-repeat;
-}
 
-#image2, #image3, #image4 {
-    height: 220px;
-    background-size: 95% 95%;
+.image_menu {
     width: 280px;
-    cursor: pointer;
-}
-
-#imageText1, #imageText2, #imageText3, #imageText4 {
-    position: absolute;
-    z-index: 1;
-    color: darkgreen;
-    background-color: rgba(237, 221, 221, 0.7);
-    padding: 2px 5px 2px 5px;
-    border-radius: 10%;
-    opacity: 0;
-    pointer-events: none;
-
+    height: 220px;
+    padding: 10px;
 }
 
 /* ----------- Footer ----------- */
@@ -279,9 +256,10 @@ h3 {
 }
 
 #time {
-    border-bottom: solid;
-    border-width: thin;
     padding-bottom: 5px;
+
+    border-width: thin;
+    border-bottom: solid;
 }
 
 #info_flex {
@@ -325,80 +303,98 @@ h3 {
     height: 80px;
     padding-left: 10px;
 
-    fill: #ffffff;
     cursor: pointer;
+
+    fill: #ffffff;
 }
 
 /*--- Tilbakemelding ---*/
 
-#tilbakemelding{
-    text-align: center;
+#tilbakemelding {
     width: 100%;
 
+    text-align: center;
+
 }
-form{
+form {
     display: inline-block;
+
     width: 50%;
 
 }
-label{
+label {
     display: block;
-    font-family: 'Raleway', sans-serif;
+
     color: black;
+
+    font-family: 'Raleway', sans-serif;
 }
 
 
-input[type=text]{
+input[type=text] {
     width:20%;
-    background-color: #f8f8f8;
+
     border: 2px solid #ccc;
     border-radius: 4px;
+    background-color: #f8f8f8;
 }
-input[type=email]{
+input[type=email] {
     width:20%;
-    background-color: #f8f8f8;
+
     border: 2px solid #ccc;
     border-radius: 4px;
+    background-color: #f8f8f8;
 }
 
 textarea {
+    box-sizing: border-box;
     width: 40%;
     height: 150px;
     padding: 12px 20px;
-    box-sizing: border-box;
+
+    resize: none;
+
     border: 2px solid #ccc;
     border-radius: 4px;
     background-color: #f8f8f8;
+
     font-size: 16px;
-    resize: none;
 }
 
-input[type=submit]{
+input[type=submit] {
     position: relative;
+
     margin-bottom: 5%;
 }
 
-#tekst{
-    width: 45%;
+#tekst {
     position: relative;
     left: 28%;
-    font-family: 'Raleway', sans-serif;
+
+    width: 45%;
+
     color: black;
+
+    font-family: 'Raleway', sans-serif;
 }
 
-#overliste{
-    height: 50px;
+#overliste {
     position: relative;
-    font-family: 'Raleway', sans-serif;
-    color: black;
     bottom: 240px;
-    width: 30%;
     left: 5%;
 
+    width: 30%;
+    height: 50px;
+
+    color: black;
+
+    font-family: 'Raleway', sans-serif;
 }
 
-#formliste{
-    font-family: 'Raleway', sans-serif;
-    color: black;
+#formliste {
     list-style: Upper-roman;
+
+    color: black;
+
+    font-family: 'Raleway', sans-serif;
 }
