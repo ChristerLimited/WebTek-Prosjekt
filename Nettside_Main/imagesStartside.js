@@ -1,60 +1,90 @@
 /**
  * Created by Peder Grundvold on 11.11.2016.
  */
-var images = ["image1","image2","image3","image4"]
-imageText1 = document.getElementById("imageText1");
-imageText2 = document.getElementById("imageText2");
+const image1 = document.getElementById("image1");
+const image2 = document.getElementById("image2");
+const image3 = document.getElementById("image3");
+const image4 = document.getElementById("image4");
+const imageText1 = document.getElementById("imageText1");
+const imageText2 = document.getElementById("imageText2");
+const imageText3 = document.getElementById("imageText3");
+const imageText4 = document.getElementById("imageText4");
 newFade = 0;
 
-var mouse = true
-function setFade() { /* Change mouse to false if mouse leaves the imagebox */
-    mouse = false
+var mouse = true;
+
+/* Change mouse to false if mouse leaves the imagebox */
+function setFade() {
+    mouse = false;
+}
+
+function increaseFadeOnImage(hoveredImage, increasingImageText, noOpacityImageTexts) {
+    const firstNoOpacityImageText = noOpacityImageTexts[0];
+    const secondNoOpacityImageText = noOpacityImageTexts[1];
+    const thirdNoOpacityImageText = noOpacityImageTexts[2];
+    console.log(newFade);
+    increasingImageText.style.opacity = newFade;
+    newFade+=0.005;
+    /*The function only restarts if the mouse is still inside the image */
+    if (newFade < 1 && mouse == true) {
+        changeHoverOnImage(hoveredImage,increasingImageText);
+    }
+    /* If the mouse leaves while function is running it will quit and return the opacity */
+    else {
+        newFade = 0;
+    }
+    firstNoOpacityImageText.style.opacity = 0;
+    secondNoOpacityImageText.style.opacity = 0;
+    thirdNoOpacityImageText.style.opacity = 0;
 }
 
 /* -- ImageMenu First -- */
-function changeHover0() {
-    mouse = true
-    document.getElementById(images[0]).addEventListener("mouseout", setFade) /* Check if mouse goes out while function is running */
-    document.getElementById(images[0]).style.height = "225px";
-    document.getElementById(images[0]).style.width = "280px";
+function changeHoverOnImage(changedImage, imageText) {
+    mouse = true;
+    /* Check if mouse goes out while function is running */
+    changedImage.addEventListener("mouseout", setFade);
+    changedImage.style.height = "225px";
+    changedImage.style.width = "280px";
+    changedImage.style.opacity = "0.8";
 
-    document.getElementById(images[0]).style.opacity = "0.8";
-    setTimeout (function () {
-        imageText1.style.opacity = newFade;
-        newFade+=0.005;
-        if (newFade < 1 && mouse == true) changeHover0() /* The function only restarts if the mouse is still inside the image */
-        else newFade=0 /* If the mouse leaves while function is running it will quit and return the opacity */
-        imageText2.style.opacity = 0;
-        imageText3.style.opacity = 0;
-        imageText4.style.opacity = 0;
-    }, 0.01)
+    var imageTexts = [imageText1, imageText2, imageText3, imageText4];
+    const noOpacityImageTexts = imageTexts.filter(function(currentImageText) {
+        if (imageText != currentImageText) {
+            return currentImageText;
+        }
+    });
+
+    setTimeout (increaseFadeOnImage(changedImage, imageText, noOpacityImageTexts, newFade), 0.01);
 }
 
-function returnHover0() { /* Return to original on mouseout */
-    document.getElementById(images[0]).style.height = "220px";
-    document.getElementById(images[0]).style.width = "275px";
-    document.getElementById(images[0]).style.opacity = "1";
-    imageText1.style.opacity = "0";
-    newFade = 0
+/* Return to original on mouseout */
+function returnImageToDefaultStyle(image, imageText) {
+    image.style.height = "220px";
+    image.style.width = "275px";
+    image.style.opacity = "1";
+    imageText.style.opacity = "0";
+    newFade = 0;
 }
 
-function linkFirst() { /* Creates the respected link */
-    window.open("produkter_interior.html", "_self");
+/* Creates the respected link */
+function openProductSectionLink(produktURL) {
+    //E.g. "produkter_interior.html"
+    window.open(produktURL, "_self");
 }
 
 /* --------------------------------- Reapeted code, (issue with arguments) ---------------------------- */
 /* -- ImageMenu Second -- */
 function changeHover1() {
-    mouse = true
-    document.getElementById(images[1]).addEventListener("mouseout", setFade)
-    document.getElementById(images[1]).style.height = "225px";
-    document.getElementById(images[1]).style.width = "285px";
-    document.getElementById(images[1]).style.opacity = "0.8";
+    mouse = true;
+    image2.addEventListener("mouseout", setFade);
+    image2.style.height = "225px";
+    image2.style.width = "285px";
+    image2.style.opacity = "0.8";
     setTimeout (function () {
         imageText2.style.opacity = newFade;
         newFade+=0.005;
-        if (newFade < 1 && mouse == true) changeHover1()
-        else newFade=0
+        if (newFade < 1 && mouse == true) changeHover1();
+        else newFade=0;
         imageText1.style.opacity = 0;
         imageText3.style.opacity = 0;
         imageText4.style.opacity = 0;
@@ -62,9 +92,9 @@ function changeHover1() {
 }
 
 function returnHover1() {
-    document.getElementById(images[1]).style.height = "220px";
-    document.getElementById(images[1]).style.width = "280px";
-    document.getElementById(images[1]).style.opacity = "1";
+    image2.style.height = "220px";
+    image2.style.width = "280px";
+    image2.style.opacity = "1";
     imageText2.style.opacity = "0";
     newFade = 0
 }
@@ -75,16 +105,19 @@ function linkSecond() {
 
 /* -- ImageMenu Third -- */
 function changeHover2() {
-    mouse = true
-    document.getElementById(images[2]).addEventListener("mouseout", setFade)
-    document.getElementById(images[2]).style.height = "225px";
-    document.getElementById(images[2]).style.width = "285px";
-    document.getElementById(images[2]).style.opacity = "0.8";
+    mouse = true;
+    image3.addEventListener("mouseout", setFade);
+    image3.style.height = "225px";
+    image3.style.width = "285px";
+    image3.style.opacity = "0.8";
     setTimeout (function () {
         imageText3.style.opacity = newFade;
         newFade+=0.005;
-        if (newFade < 1 && mouse == true) changeHover2()
-        else newFade=0
+        if (newFade < 1 && mouse == true) {
+            changeHover2();
+        } else {
+            newFade=0;
+        }
         imageText1.style.opacity = 0;
         imageText2.style.opacity = 0;
         imageText4.style.opacity = 0;
@@ -92,9 +125,9 @@ function changeHover2() {
 }
 
 function returnHover2() {
-    document.getElementById(images[2]).style.height = "220px";
-    document.getElementById(images[2]).style.width = "280px";
-    document.getElementById(images[2]).style.opacity = "1";
+    image3.style.height = "220px";
+    image3.style.width = "280px";
+    image3.style.opacity = "1";
     imageText3.style.opacity = "0";
     newFade = 0
 }
@@ -105,16 +138,20 @@ function linkThird() {
 
 /* -- ImageMenu Fourth -- */
 function changeHover3() {
-    mouse = true
-    document.getElementById(images[3]).addEventListener("mouseout", setFade)
-    document.getElementById(images[3]).style.height = "225px";
-    document.getElementById(images[3]).style.width = "285px";
-    document.getElementById(images[3]).style.opacity = "0.8";
+    mouse = true;
+    image4.addEventListener("mouseout", setFade);
+    image4.style.height = "225px";
+    image4.style.width = "285px";
+    image4.style.opacity = "0.8";
     setTimeout (function () {
         imageText4.style.opacity = newFade;
         newFade+=0.005;
-        if (newFade < 1 && mouse == true) changeHover3()
-        else newFade=0
+        if (newFade < 1 && mouse == true) {
+            changeHover3();
+        }
+        else {
+            newFade = 0;
+        }
         imageText1.style.opacity = 0;
         imageText2.style.opacity = 0;
         imageText3.style.opacity = 0;
@@ -122,9 +159,10 @@ function changeHover3() {
 }
 
 function returnHover3() {
-    document.getElementById(images[3]).style.height = "220px";
-    document.getElementById(images[3]).style.width = "280px";
-    document.getElementById(images[3]).style.opacity = "1";
+    const image4 = document.getElementById(images[3]);
+    image4.style.height = "220px";
+    image4.style.width = "280px";
+    image4.style.opacity = "1";
     imageText4.style.opacity = "0";
     newFade = 0
 }
@@ -136,21 +174,21 @@ function linkFourth() {
 /* -------------------------------------------------------------------- */
 
 /* -- Event Listeners -- */
-document.getElementById(images[0]).addEventListener("mouseover", changeHover0);
-document.getElementById(images[0]).addEventListener("mouseout", returnHover0);
-document.getElementById(images[0]).addEventListener("click", linkFirst);
+image1.addEventListener("mouseover", changeHoverOnImage(image1,imageText1));
+image1.addEventListener("mouseout", returnImageToDefaultStyle(image1,imageText1));
+//image1.addEventListener("click", openProductSectionLink("produkter_interior.html"));
 
 
-document.getElementById(images[1]).addEventListener("mouseover", changeHover1);
-document.getElementById(images[1]).addEventListener("mouseout", returnHover1);
-document.getElementById(images[1]).addEventListener("click", linkSecond);
+image2.addEventListener("mouseover", changeHoverOnImage(image2,imageText2));
+image2.addEventListener("mouseout", returnImageToDefaultStyle(image2,imageText2));
+//image2.addEventListener("click", openProductSectionLink("produkter_kjokken.html"));
 
 
-document.getElementById(images[2]).addEventListener("mouseover", changeHover2);
-document.getElementById(images[2]).addEventListener("mouseout", returnHover2);
-document.getElementById(images[2]).addEventListener("click", linkThird);
+image3.addEventListener("mouseover", changeHoverOnImage(image3,imageText3));
+image3.addEventListener("mouseout", returnImageToDefaultStyle(image3,imageText3));
+//image3.addEventListener("click", openProductSectionLink("produkter_servise.html"));
 
 
-document.getElementById(images[3]).addEventListener("mouseover", changeHover3);
-document.getElementById(images[3]).addEventListener("mouseout", returnHover3);
-document.getElementById(images[3]).addEventListener("click", linkFourth);
+image4.addEventListener("mouseover", changeHoverOnImage(image4, imageText4));
+image4.addEventListener("mouseout", returnImageToDefaultStyle(image4,imageText4));
+//image4.addEventListener("click", openProductSectionLink("produkter_bestikk.html"));
