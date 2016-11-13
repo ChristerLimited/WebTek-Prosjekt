@@ -236,18 +236,6 @@ h2 {
     cursor: pointer;
 }
 
-#imageText1, #imageText2, #imageText3, #imageText4 {
-    position: absolute;
-    z-index: 1;
-    color: darkgreen;
-    background-color: rgba(237, 221, 221, 0.7);
-    padding: 2px 5px 2px 5px;
-    border-radius: 10%;
-    opacity: 0;
-    pointer-events: none;
-
-}
-
 /* ----------- Footer ----------- */
 footer {
     position: relative;
