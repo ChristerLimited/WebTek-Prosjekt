@@ -1,7 +1,8 @@
 /**
  * Created by snotu on 10.11.2016.
  */
-window.onload = function () {
+
+window.onload = function() {
     checkForEmptyFields()
 };
 
@@ -50,7 +51,7 @@ function checkForEmptyFields() {
     }
 
     //Checks whether there are any empty fields.
-    if (formUL.innerHTML == ""){
+    if (formUL.innerHTML == "") {
         const readyText = document.createTextNode("Alle felter er utfylt");
         formUL.appendChild(readyText);
     }

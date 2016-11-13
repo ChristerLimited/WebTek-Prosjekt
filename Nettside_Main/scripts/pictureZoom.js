@@ -1,3 +1,8 @@
+// ******************************
+// Created by Christer Hølestøl
+// November 2016
+// ******************************
+
 window.onload = function() {
     const zoomedPicturesModules = document.getElementsByClassName("zoomed_pictures");
     const zoomedPictures = document.getElementsByClassName("zoomed_pictures_content");

@@ -1,3 +1,8 @@
+// ******************************
+// Created by Paul Erik Frivold
+// November 2016
+// ******************************
+
 // myDropdown() is called when Produkter is clicked.
 function myDropdown() {
   var pageWrapper = document.getElementById('page_wrapper');

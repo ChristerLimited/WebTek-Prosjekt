@@ -1,6 +1,7 @@
 /**
  * Created by Peder Grundvold on 10.11.2016.
  */
+ 
 var facebookIcon = document.getElementById("facebook");
 var instagramIcon = document.getElementById("instagram");
 
