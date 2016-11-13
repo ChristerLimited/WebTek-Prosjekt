@@ -25,6 +25,36 @@
     <header>
         <h2>Changes to the HTML Pages and CSS Styling</h2>
     </header>
+    <header>
+        <h3>Changes to the Universal Design</h3>
+    </header>
+    <p>
+        In most respects, the universal design is the same as in the P2 Design Document. There are a couple of differences,
+        however, and we will present them below.
+    </p>
+    <p>
+        <i><b>The navigation bar:</b></i> Although it is similar in many respects, we have made some changes to the
+        drop down effect when the user clicks on "Produkter" (see <a href="#drop_down_menu">navbar_script.js</a> below).
+    </p>
+    <p>
+        <i><b>Footer:</b></i> There have been a couple of changes in the footer. First of all, the order of the various
+        elements is now:  "Kontakt oss", "Åpningstider", Facebook icon and Instagram icon. Also, in the "Åpningstider"
+        element, we have added a JavaScript script that lets the user know whether the store is open or not at the time
+        of browsing the page (see <a href="#get_time">getTime.js</a> below).
+    </p>
+    <p>
+        <i><b>Font family and font size:</b></i> In the P2 Design Document, we specified that the web site would use
+        two different fonts. More specifically, we specified that the content would have the font family "Raleway",
+        wheras headers and the navigation bar would use "Playfair Display" (both from Google Fonts). We ended up only
+        using "Raleway". The reason for this was a matter of convenience and that we liked the way it looked, even  in
+        the navigation bar and in headers.
+    </p>
+    <p>
+        Overview of the changes to the Universal Design:
+    </p>
+    <header>
+        <h3>Modfications of the HTML Documents</h3>
+    </header>
     <p>
         As the project transpired, the team had to make some changes to the web site. The changes was made primarily by
         the members of the team, but some came from the client, as well. The rest of this section will compare each
@@ -51,7 +81,7 @@
     </p>
     <p>
         <i><b>kontakt.html:</b></i> Previously called "kontakt_oss.html", this page was shortened to "kontakt.html" by
-        a misunderstanding by one of the team members. The page design differs from the original design in some respects.
+        a misunderstanding the team members. The page design differs from the original design in some respects.
         Firstly, as mentioned above, the page no longer has Google Maps. Also, as a consequence of Instagram feed
         integration being a cumbersome endeavor, the page now has a single Instagram photo instead. Analogously, we did
         the same for the Facebook feed. In this way, although it is not as flashy as Instagram or Facebook feeds, it nonetheless
@@ -60,40 +90,76 @@
     </p>
     <p>
         <i><b>tilbakemeldinger.html:</b></i> Previously called "henvendelser.html", this page was shortened to "kontakt.html" by
-        a misunderstanding by one of the team members.
+        a misunderstanding by the team members. The design of the page is nearly identical to the original design. Some changes 7
+        were made as to where the form fields and their corresponding label are placed. Another modification is that the group
+        has added a list of requirements that need to be filled out before sending the form.
+        As the user fills out the various fields, the list of requirements will be updated dynamically (see the
+        <a href="#empty_fields_check">checkForEmptyFields.js section.</a> for a more thorough description).
     </p>
+    <p>
+        <i><b>Pages of the form produkter_X.html:</b></i> These are more or less the same. The only diffrence is that
+        border radius and hover effects have been added on the picture to make them more presentable.
+    </p>
+    <header>
+        <h3>Removed Pages</h3>
+    </header>
     <p id="produkter_lys_og_servietter">
-        <i><b>produkter_lys_og_servietter.html:</b></i> The client, initally having asked us to make a
+        <i><b>produkter_lys_og_servietter.html:</b></i> The client, initially having asked us to make a
         product section for candles and napkins, realized that she did not have any apt pictures for this purpose.
         Together with the client, the team decided to simply drop this section altogether.
     </p>
-    <p>The questions used were (in Norwegian):</p>
-    <ol>
-        <li>Hvor gammel er du?</li>
-        <li>Jeg synes data og andre teknologier er lette å lære seg.</li>
-        <li>Jeg føler jeg har god kontroll på data.</li>
-        <li>Jeg tror jeg kunne likt å brukt denne nettsiden ofte.</li>
-        <li>Jeg synes nettsiden var unødig kompleks.</li>
-        <li>Jeg synes nettsiden var lett å bruke.</li>
-        <li>Jeg synes det var lett å navigere meg rundt på nettsiden.</li>
-        <li>Jeg tror de fleste ville synes at nettsiden er enkel å bruke.</li>
-    </ol>
     <p>
-        Link to Google Forms:
+        <i><b>produkter.html:</b></i> The intention of this page was for it to act as a kind of "mini landing page" for
+        the different product sections. However, during the development process, it became clear that the page would be
+        redundant. Furthermore, it is just as easy, we presume, to simply use the navigation bar. For these reasons, we
+        removed this page from the web site.
     </p>
 </section>
 <section>
     <header>
-        <h2>Tester Audience</h2>
+        <h2>Changes to the Minimum Requirements</h2>
     </header>
-</section>
-<section>
     <header>
-        <h2 id="sources">Sources</h2>
-        <p>Brooke, J., <i>SUS - A quick and dirty usability scale</i>, p. 6, source:
-            <a href="http://www.usabilitynet.org/trump/documents/Suschapt.doc">usability.org</a>, date: 11.11.16.
-        </p>
+        <h3>Final Minumum Requirements</h3>
     </header>
+    <p>
+        During the project the team ended up changing some of the minimum requirements. This was done mostly because
+        form validation and displaying text on hover could more easily be implementing HTML and CSS. Consequently, the
+        team made provided two new JavaScript functionalities. The final minimum requirements was:
+    </p>
+    <p id="empty_fields_check">
+        <i><b>checkForEmptyFields.js:</b></i> For each form field the user fill out, the script will dynamically update a
+        list of required fields to be filled out. This list is displayed to the left of the form fields. When the user has filled
+        out every form field, the list will contain only a single element telling the user that every field has been
+        answered. This requirement was implemented by Vemund.
+    </p>
+    <p id="drop_down_menu">
+        <i><b>navbar_script:</b></i> <i>In lieu</i> of a regular drop down menu, the drop downmenu now goes under the
+        navigation bar. The drop down menu comes in from the left and displays the product categories. This requirement
+        was implemented by Paul Erik.
+    </p>
+    <p id="get_time">
+        <i><b>getTime.js:</b></i> This script checks the time at which the user is browsing the page. If the user is
+        browsing at a time at which the store is open, it will update the "Åpningstider" element in the footer. The
+        element will now say "Åpent". Analoguously, near closing time, "Åpningstider" will display "Stenger snart".
+        Lastly, in the timespan at which the store is closed, "Åpningstider" will display "Stengt". This requirement was
+        implemented by Peder.
+    </p>
+    <p>
+        <i><b>pictureZoom.js:</b></i> This requirement was implemented in accordance with the description in the P2
+        Design Document. This requirement was implemented by Christer.
+    </p>
+    <header>
+        <h3>Additional Scripts</h3>
+    </header>
+    <p>
+        We added an additional script for the Facebook icon and the Instagram icon in the footer:
+    </p>
+    <p>
+        <i><b>linkSocial_inFooter.js:</b></i> This script makes the Facebook and the Instagram icon bigger on hover. It
+        additionally sets the link of Steintøykjelleren's Facebook profile to the Facebook icon. Similarly, the link for
+        Steintøykjelleren's Instagram profile is also set.
+    </p>
 </section>
 </body>
 </html>
