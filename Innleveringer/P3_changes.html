@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="P3_P4_style.css">
-    <title>P3 Changes</title>
+    <title>P3 project Changes</title>
 </head>
 <body>
 <section>
@@ -38,7 +38,8 @@
     </p>
     <p>
         <i><b>Footer:</b></i> There have been a couple of changes in the footer. First of all, the order of the various
-        elements is now:  "Kontakt oss", "Åpningstider", Facebook icon and Instagram icon. Also, in the "Åpningstider"
+        elements is now:  "Kontakt oss", "Åpningstider", Facebook icon and Instagram icon. Incidentally, the icons are
+        not icons stored locally, but are obtained via a URL. In the "Åpningstider"
         element, we have added a JavaScript script that lets the user know whether the store is open or not at the time
         of browsing the page (see <a href="#get_time">getTime.js</a> below).
     </p>
@@ -160,6 +161,150 @@
         additionally sets the link of Steintøykjelleren's Facebook profile to the Facebook icon. Similarly, the link for
         Steintøykjelleren's Instagram profile is also set.
     </p>
+</section>
+<section>
+    <header>
+        <h3>Modularity</h3>
+    </header>
+    <p>
+        Modularity was handled handled via CSS and JavaScript. For instance, the universal design was written
+        in the CSS file "main.css", which was included in every HTML page. An example of JavaScript modularity is
+        "pictureZoom.js". Every product section had pictures, so we used "pictureZoom.js" for each product section.
+    </p>
+    <p>
+        The JavaScript modularity was implemented by those who had created the script (see the section above to see
+        who made the various scripts). The universal design in CSS was made by everyone. However, Paul Erik did most of
+        the implementation of the navigation bar CSS, Peder implemented much of the footer, and Christer made the
+        common CSS for the product section.
+    </p>
+</section>
+<section>
+    <header>
+        <h2>Final Overview of the Web Site</h2>
+    </header>
+    <p>Here we will summarize the final file tree and the final organizational scheme.</p>
+    <header>
+        <h3>Final Organizational Scheme</h3>
+    </header>
+    <table id="file_table">
+        <tr>
+            <th>File</th>
+            <th>File Description</th>
+            <th>Implemented by</th>
+        </tr>
+        <tr>
+            <td>main.css</td>
+            <td>The basic style framework for the rest of the pages.</td>
+            <td>Everyone</td>
+        </tr>
+        <tr>
+            <td>startside.html</td>
+            <td>The landing page, the first page a customer sees.</td>
+            <td>Peder</td>
+        </tr>
+        <tr>
+            <td>All files of the form produkter_X.html</td>
+            <td>This is a collection of similar product pages, with pictures.</td>
+            <td>Christer</td>
+        </tr>
+        <tr>
+            <td>kontakt.html</td>
+            <td>This is the page where the user gets info for how to contact the store.</td>
+            <td>Peder</td>
+        </tr>
+        <tr>
+            <td>om_oss.html</td>
+            <td>This is the page where the history of the business is presented.</td>
+            <td>Paul Erik</td>
+        </tr>
+        <tr>
+            <td>tilbakemeldinger.html</td>
+            <td>This is the pages where the user can contact the store via forms.</td>
+            <td>Vemund</td>
+        </tr>
+        <tr>
+            <td>navbar_script.js</td>
+            <td>The dropdown menu for the 'Produkter' part of the navigation bar.</td>
+            <td>Paul Erik</td>
+        </tr>
+        <tr>
+            <td>pictureZoom.js</td>
+            <td>The JavaScript application that lets the user enlarge an image by clicking on it.</td>
+            <td>Christer</td>
+        </tr>
+        <tr>
+            <td>checkForEmptyFields.js</td>
+            <td>JavaScript for checking for empty form fields.</td>
+            <td>Vemund</td>
+        </tr>
+        <tr>
+            <td>getTime.js</td>
+            <td>JavaScript application for displaying whether the store is open or not at the time of browsing.</td>
+            <td>Peder</td>
+        </tr>
+        <tr>
+            <td>linkSocial_inFooter.js</td>
+            <td>JavaScript application for setting of links and enlarging icons in footer.</td>
+            <td>Peder</td>
+        </tr>
+    </table>
+    <header>
+        <h3>Final File Tree</h3>
+    </header>
+    <ul>
+        <li>startside.html</li>
+        <li>om_oss.html</li>
+        <li>kontakt.html</li>
+        <li>tilbakemeldinger.html</li>
+        <li>produkter_kjokken.html</li>
+        <li>produkter_bestikk.html</li>
+        <li>produkter_interior.html</li>
+        <li>produkter_servise.html</li>
+        <li>images/
+            <ul>
+                <li>kjokken1.jpg</li>
+                <li>kjokken2.jpg</li>
+                <li>kjokken3.jpg</li>
+                <li>kjokken4.jpg</li>
+                <li>kjokken5.jpg</li>
+                <li>servise1.jpg</li>
+                <li>servise2.jpg</li>
+                <li>servise3.jpg</li>
+                <li>servise4.jpg</li>
+                <li>bestikk1.jpg</li>
+                <li>bestikk2.jpg</li>
+                <li>bestikk3.jpg</li>
+                <li>bestikk4.jpg</li>
+                <li>bestikk5.jpg</li>
+                <li>bestikk6.jpg</li>
+                <li>interior1.jpg</li>
+                <li>interior2.jpg</li>
+                <li>interior3.jpg</li>
+                <li>interior4.jpg</li>
+                <li>interior5.jpg</li>
+                <li>interior6.jpg</li>
+                <li>interior7.jpg</li>
+                <li>interior8.jpg</li>
+            </ul>
+        </li>
+        <li>
+            style/
+            <ul>
+                <li>main.css</li>
+
+            </ul>
+        </li>
+        <li>
+            scripts/
+            <ul>
+                <li>pictureZoom.js</li>
+                <li>getTime.js</li>
+                <li>checkForEmptyFields.js</li>
+                <li>navbar_script.js</li>
+                <li>linkSocial_inFooter.js</li>
+            </ul>
+        </li>
+    </ul>
 </section>
 </body>
 </html>
